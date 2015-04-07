@@ -8,7 +8,7 @@
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd ">
 
 	
-	<bean id="rpService" class="com.orange.paddock.cee.business.service.RichProfileService">
+	<bean id="rpService" class="">
 		<property name="rpClient" ref="rpApiClient" />
 	</bean>
 	
