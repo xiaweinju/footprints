@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+                        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+                        http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+                        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+                        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+	<aop:aspectj-autoproxy />
+
+	<mvc:annotation-driven />
+	<context:component-scan base-package="com.weixia.footprint.provider.gui.controller" />
+
+	
+
+	
+<!-- 	<bean id="handlerExceptionResolver" class="com.orange.paddock.cee.gui.error.ExceptionHandler"> -->
+<!-- 	</bean> -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+	<mvc:resources mapping="/images/**" location="/images/" />
+	<mvc:resources mapping="/css/**" location="/css/" />
+	<mvc:resources mapping="/jslib/**" location="/jslib/" />
+
+
+	
+<!-- 	<bean id="papService" class="com.orange.paddock.cee.business.service.PAPService"> -->
+<!-- 		<property name="papClient" ref="papClient"/> -->
+<!-- 	</bean> -->
+	
+<!-- 	<bean name="dataService" class="com.orange.paddock.cee.business.service.DataService"> -->
+<!-- 		<property name="relationDao" ref="relationDaoBean"/> -->
+<!-- 		<property name="userDao" ref="userDaoBean"/> -->
+<!-- 		<property name="contactDao" ref="contactDaoBean"/> -->
+<!-- 	</bean> -->
+	
+<!-- 	<bean name="rpService" class="com.orange.paddock.cee.business.service.RichProfileService"> -->
+<!-- 		<property name="rpClient" ref="rpClient"/> -->
+<!-- 	</bean> -->
+<!-- 	<bean id="rpClient" class="com.orange.paddock.cee.consumer.richProfile.RichProfileClient"/> -->
+</beans>

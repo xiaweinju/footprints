@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jaxws="http://cxf.apache.org/jaxws" xmlns:http-conf="http://cxf.apache.org/transports/http/configuration"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd 
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd ">
+
+	
+	<bean id="rpService" class="com.orange.paddock.cee.business.service.RichProfileService">
+		<property name="rpClient" ref="rpApiClient" />
+	</bean>
+	
+	<bean id="papService" class="com.orange.paddock.cee.business.service.PAPService">
+		<property name="papClient" ref="papApiClient" />
+	</bean>
+	
+	<bean id="dataService" class="com.orange.paddock.cee.business.service.DataService">
+		
+		<property name="userDao" ref="userDaoBean" />
+		<property name="contactDao" ref="contactDaoBean" />
+	</bean>
+	
+
+	<bean id="wtApiClient" class="com.orange.paddock.wtapi.client.WTApiClient">
+		<constructor-arg name="wtApiConfiguration" ref="wtApiConfiguration" />
+	</bean>
+
+	<bean id="wtApiConfiguration" class="com.orange.paddock.wtapi.model.WTApiConfiguration">
+		<property name="endPoint" value="${orange.wt.endpoint}" />
+		<property name="service" value="${orange.wt.service}" />
+		<property name="username" value="${orange.wt.iosw.login}" />
+		<property name="password" value="${orange.wt.iosw.password}" />
+		<property name="proxyHost" value="${orange.wt.proxy.host}" />
+		<property name="proxyPort" value="${orange.wt.proxy.port}" />
+		<property name="timeout" value="${orange.wt.timeout}" />
+	</bean>
+
+	<bean id="rpApiClient" class="com.orange.paddock.cee.consumer.richProfile.RichProfileClient">
+		<constructor-arg name="cfg" ref="rpConfiguration" />
+	</bean>
+	<bean id="rpConfiguration" class="com.orange.paddock.cee.consumer.richProfile.RichProfileConfiguration">
+		<property name="endPoint" value="${orange.richProfile.endpoint}" />
+	</bean>
+	
+	<bean name="papApiClient" class="com.orange.paddock.cee.consumer.upe.client.PAPClient">
+		<constructor-arg  ref="UPEPAPClient" />
+		<property name="clientId" value="${pap.clientid}" />
+	</bean>
+	
+	
+	
+</beans>

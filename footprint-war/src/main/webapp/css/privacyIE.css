@@ -1,0 +1,105 @@
+/* general */
+
+.presentation-content
+{
+	margin-left:20px;
+	width:1000px;
+	height: auto !important;
+	height: 350px;
+	min-height: 350px;
+	position: relative;
+}
+
+.privacy-section-content
+{
+	margin: -20px 30px 20px 30px; 
+	margin-top:30px;
+}
+
+.panelShadowCenterRight
+{
+	background-color: transparent;
+	background-image: url(../images/shadowPanel_center_right.gif);
+	background-repeat: repeat-y;
+	background-position: 0 0;
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	top: 8px;
+	width: 8px;
+	padding-bottom: 100px;
+}
+
+#privacy-interaction div#privacy-cgu-div
+{
+	margin: 0 0 0 0;
+	position: absolute; 
+	top: 465px;
+	left: 300px;
+}
+
+#privacy-interaction p#privacy-interaction-cgu
+{
+	text-align: left;
+	font-size: 9px;
+}
+.grey-help-inverse
+{
+	padding: 0px 10px 0px 10px;	
+}
+#privacy-content ul
+{
+	display: block;
+}
+#privacy-content ul li
+{
+	display: block;
+}
+
+.privacy-consent-section-middle
+{
+	padding-top:30px;
+}
+
+.table td.c2 
+{
+	width:220px; 
+	line-height:19px; 
+	padding-top:6px; 
+	vertical-align:bottom;
+	position:relative
+}
+
+.table td.c2 .text
+{
+	position:absolute;
+}
+.table td.c2 input
+{
+	top:6px;
+	position:absolute;
+}
+.js-editable controls
+{
+	position:relative;
+}
+
+.edit
+{
+	bottom:6px;
+	position:relative;
+}
+
+.cancel
+{
+	bottom:6px;
+	position:relative;
+}
+
+.save
+{
+	bottom:6px;
+	position:relative;
+}
+
+

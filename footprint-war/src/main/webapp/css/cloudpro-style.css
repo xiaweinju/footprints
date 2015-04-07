@@ -1,0 +1,36 @@
+h2 {font-size:22px; font-weight:bold; margin:10px}
+h4 {margin-top:10px; color:#ff6600; font-size:16px; font-weight:bold;}
+
+.grey-bold-title-h2 {font-size:22px; font-weight:bold; color:#999999;}
+
+.cp_separator3 {margin-top:2px; color:#CCCCCC; background-color:#CCCCCC; height:3px;}
+.cp_container {margin:15 auto; width:700px; }
+.cp_loggedas {margin-top:70px; text-align:right; padding-right:50px;}
+.cp_mediumbox {position:relative; width:700px; padding:12px; margin:auto;}
+.cp_mediumbox h3 {font-size:15px; font-weight:bold; margin-bottom:15px;}
+.cp_mediumbox p {font-size:13px; }
+.cp_mediumbox p.info {font-size:11px; color:#cccccc;}
+.cp_mediumbox .buttons {text-align:right; margin-top:15px;}
+
+.cp_smallbox {position:relative; width:210px; padding:12px; margin-right:0 0 15px 2px;}
+.cp_smallbox.info {position:relative; margin:45px 25px 15px auto; line-height:15px}
+.cp_smallbox.info img {float:left; margin-right:10px;}
+.cp_smallbox.info h4 {color:#333333; font-size:13px; font-weight:normal; margin-top:0px;}
+.cp_smallbox.info p {color:#444444; margin-top:10px;}
+
+/* box border css */
+.box {position:relative}
+.border .tl, .border .t, .border .tr, .border .r, .border .br, .border .b, .border .bl, .border .l {position:absolute; display:block; z-index:1}
+.box .border .t  {background:url(../images/box/panel_t.png);  width:auto; height:6px;  top:-6px; right: 0px; bottom:auto; left: 0px}
+.box .border .tr {background:url(../images/box/panel_tr.png); width:6px;  height:6px;  top:-6px; right:-6px; bottom:auto; left:auto}
+.box .border .r  {background:url(../images/box/panel_r.png);  width:6px;  height:auto; top: 0px; right:-6px; bottom: 0px; left:auto}
+.box .border .br {background:url(../images/box/panel_br.png); width:6px;  height:6px;  top:auto; right:-6px; bottom:-6px; left:auto}
+.box .border .b  {background:url(../images/box/panel_b.png);  width:auto; height:6px;  top:auto; right: 0px; bottom:-6px; left: 0px}
+.box .border .bl {background:url(../images/box/panel_bl.png); width:6px;  height:6px;  top:auto; right:auto; bottom:-6px; left:-6px}
+.box .border .l  {background:url(../images/box/panel_l.png);  width:6px;  height:auto; top: 0px; right:auto; bottom: 0px; left:-6px}
+.box .border .tl {background:url(../images/box/panel_tl.png); width:6px;  height:6px;  top:-6px; right:auto; bottom:auto; left:-6px}
+
+.cp_notlogged {margin-top:50px; }
+.cp_notlogged p {font-size:13px; }
+
+   

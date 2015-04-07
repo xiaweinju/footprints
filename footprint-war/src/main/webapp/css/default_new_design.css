@@ -1,0 +1,2599 @@
+/* General styles*/
+
+body {
+    background-color: white;
+    margin: 0;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-weight: normal;
+	font-size: 11px;
+	color: black;
+	line-height: 1.3;
+}
+
+p {
+    margin-bottom: 1em;
+}
+/*Added because td doesn't inherit font-size from body style*/
+td {
+	font-size: 11px;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    margin-right: 0.2em;
+}
+
+a:link,
+a:visited {
+    color: #FF6600;
+    background-color: transparent;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+a.black:link,
+a.black:visited {
+    color: black;
+    background-color: transparent;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a.black:hover,
+a.black:active {
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+h1 {
+    /*font-weight: bold;*/
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 15px;
+	color: black;
+	border: none;
+}
+
+h2 {
+    font-weight: bold;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 13px;
+	color: black;
+	border: none;
+}
+
+h3 {
+    font-weight: bold;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 11px;
+	color: black;
+	border: none;
+	margin-bottom: 0.5em;
+}
+
+/*.orangetitle {
+    font-weight: bold;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 13px;
+    color: #FF5D00;
+	border: none;
+}*/
+
+li {
+    list-style-image: url(../images/li.png);
+    padding-bottom:0.5em;
+}
+
+
+
+
+/* Two fake div to fill space on top of the page. */
+
+#filldivw {
+    width: 950px;
+    height: 15px;
+    background-color: white;
+}
+
+/* The shadow div just include the main div and display the shadow effect*/ 
+
+#shadowdiv {
+    width: 50em;
+    padding: 0;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    margin: 0;
+    margin-left: 15em;
+    background-color: #E5E5E5;    
+}
+
+/* We need a larger size for help and activity */
+#shadowdivactivity {
+    width: 50em;    
+    padding: 0;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    margin: 0;
+    margin-left: 15em;
+    background-color: #E5E5E5;    
+}
+#shadowdivhelp {
+    width: 50em;
+    padding: 0;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    margin: 0;
+    margin-left: 15em;
+    background-color: #E5E5E5;    
+}
+
+/* To insert a space zone when needed */
+
+div.filldiv_white_35 {
+    height: 35px;
+    background-color: white;
+}
+
+div.filldiv_white_1em {
+    height: 1em;
+    background-color: white;
+}
+
+/* The main div containing all other contents div*/
+
+#maindiv {
+    border: 1px solid #949494;
+    padding: 2em;
+    padding-top: 1.5em;
+    background-color: white;
+}
+
+/* The first content div, displaying the logo */
+
+#logodiv {
+    border-bottom: 1px solid #E0E0E0;
+    padding-top: 0;
+    padding-bottom: 1em;
+    /*margin-bottom:1em;*/
+}
+
+/* The div for small log */
+
+.logodivauthorize {
+    /*border-bottom: 1px solid #E0E0E0;*/
+    /*padding-bottom: 0.2em;
+    margin-bottom:0.2em;*/
+	font-size: 20pt;
+    color: #FF6600;
+    margin-bottom:0.2em;
+}
+
+.logodivauthorize2 {
+    margin-top:20px;
+}
+
+.logodivauthorize table {
+    width:100%;
+}
+
+.logodivauthorize table tr td.left {
+    text-align: left;
+    font-size: 20pt;
+}
+
+.logodivauthorize table tr td.right {
+    text-align: right;
+    vertical-align: top;
+}
+
+
+/* The div for the menu */
+
+#menudiv {
+    border: 1px solid #949494;
+    padding: 1em;
+    padding-bottom: 2em;
+    background-color: white;
+    text-align:left;
+}
+
+
+/* A div for displaying text paragraphs */
+.loremipsum {
+    /*padding-left: 10em;*/   
+    padding-bottom: 1em;
+    margin-bottom: 0;
+
+}
+
+/* ... and associated styles. */
+
+.loremipsum p {
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Last paragraph of a loremipsum */
+
+.lastp {
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+    padding-top: 1em;    
+    border-top: 1px solid #E0E0E0;   
+}
+
+/* For displaying 'wide text', i.e juste after the logo */
+
+.widetext {
+    margin-top:0;
+    margin-bottom:1.5em;
+    padding: 0.2em;
+    padding-top:0.8em;
+    border-bottom: 1px solid #E0E0E0;
+    overflow: hidden;
+}
+
+.widetext p {
+    margin-top: 0;
+}
+
+.widetext h2 {
+    font-weight: bold;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 15px;
+    color: black;
+	border: none;
+}
+
+.widetext h2.last {
+    font-weight: bold;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 15px;
+    color: black;
+	border: none;
+}
+
+.widetext img {
+     margin-right: 0.5em;
+}
+
+/* For displaying information message */ 
+
+.message {
+    background-color: white;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-left:  #999 1px solid;
+    border-right: #999 1px solid;    
+}
+
+table.dialog {
+    background-color: white;
+    padding:0;
+    margin:0;
+}
+
+table.dialog td {
+    /*border:#999 1px solid;*/
+    padding:0;
+    padding-left: 1em;
+    margin:0;
+}
+
+table.dialog td.icon {
+    border: none;
+    padding:0;
+    padding-top: 0.66em;
+    vertical-align: top;
+}
+
+table.dialog td.align_to_right {
+    text-align: right;
+    padding-top: 0.66em;    
+    width: 100%;
+}
+
+table.dialog #info_message {
+    font-weight: normal;
+}
+
+
+.message p {
+    margin: 1em;
+}
+
+.message ul {
+    padding-left: 2em;
+}
+
+.message li {
+    list-style-image: url(../images/li.png);
+    padding:0;
+    margin:0;
+
+}
+
+/* Styles for round corner */
+
+.bordertop {
+    background: url(../images/round-top-left.png) no-repeat left;
+    margin: 0;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding:0;
+    text-align: right;
+    height: 3px;
+}
+
+.bordertop img {
+    margin: 0;
+    padding: 0;
+    border:0;
+    vertical-align: top;
+}
+
+.borderbottom {
+    background: url(../images/round-bottom-left.png) no-repeat left;
+    margin: 0;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    padding:0;
+    text-align: right;
+    height: 3px;
+}
+
+.borderbottom img {
+    margin: 0;
+    padding: 0;
+    border:0;
+    vertical-align: top;
+}
+
+/* To add a buble like base */
+
+.borderbubble {
+    background: url(../images/round-bottom-bubble-left.png) no-repeat left;
+    margin: 0;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding:0;
+    text-align: right;
+    height: 17px;
+}
+
+.borderbubble img {
+    margin: 0;
+    padding: 0;
+    border:0;
+    vertical-align: top;
+}
+
+
+/* For displaying CGU in a scrollin zone */
+
+.cgu {
+    border: 1px solid #E0E0E0; 
+    overflow: scroll; 
+    height: 300px;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+/* A div to display user interface */
+.working_zone {
+    padding-left: 2em;
+    padding-right: 2em;   
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.newid_zone {
+    text-align: left;
+    padding-left: 0;   
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.my_sites_zone {
+    padding-left: 0;
+    padding-right: 0;   
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+/* div containg actions buttons (next, prev, ok, continue, ...)*/
+.actionbuttons {
+    border-top: 1px solid #E0E0E0; 
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+    padding-right: 0;
+    text-align: right;
+}
+
+.actionbuttons p {
+    margin-top: 0;
+}
+
+
+.createbuttons {
+    padding-top: 1.5em;
+    text-align: right;
+}
+
+
+.confirmationbox {
+    border: 1px solid #999; 
+    /*background: url(../images/info.png) no-repeat left;*/
+    background-color: white;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left:  3em;
+    margin-right: 3em;    
+    padding: 0.5em;
+    padding-left:  1.5em;
+    padding-right: 1em;
+    text-align: right;
+}
+
+.continuebutton {
+    border-top: 1px solid #E0E0E0; 
+    margin-top: 0.5em;
+    margin-bottom: 0em;    
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: right;
+}
+
+.confirmbuttons {
+    border-top: 1px solid #E0E0E0; 
+    margin-top: 1.5em;
+    /*padding-top: 1.5em;*/
+    padding-right: 0;
+    text-align: right;
+}
+
+.cgu_validation {
+    padding-right: 0;
+}
+.checkbox_img_cgu{
+	vertical-align:text-top;
+}
+
+.confirmbuttons p {
+    text-align: left;
+}
+
+.confirmbuttons .nb {
+    text-align: right;
+}
+
+.attributeindexbuttons {
+    border-top: 1px solid #E0E0E0; 
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.3em;
+    padding-right: 0;
+    text-align: center;
+}
+
+
+/* Style to avoid form */
+
+form.invisible
+{
+    display: inline; 
+    padding: 0;
+    margin: 0; 
+    border:0;
+    
+}
+
+/* User inputs */
+
+/* Zone to display user inputs*/ 
+
+#choose_id_form {
+    padding: 1em;
+    padding-top:0;
+    background-color: #F9F9F9;
+    border: 1px solid #E0E0E0;   
+    margin-bottom: 0;
+}
+
+/* Menu managment */
+
+#menu {
+    list-style:none;
+    margin:0;
+    padding:0;
+    margin-left: 2em;
+    margin-top: 2.5em;
+}
+
+#menu li {
+    /*display:inline;*/
+    margin:0px;
+    padding: 0;
+    margin-bottom:1.2em;
+    font-size:12px;
+    list-style-image: none;
+    /*background:white url(../images/arrow_title.gif) no-repeat;*/
+	background-image:url(../images/arrow_title.gif);
+	background-repeat:no-repeat;
+	background-position:left center;
+	vertical-align: top;
+    
+    /*list-style-image: url(../images/arrow_title.gif);
+    list-style-position: inside;*/
+    padding-left: 1.5em;
+}
+
+#menu li.selected {
+    color: #FF6600;
+    font-weight: bold;
+}
+
+#menu .exit {
+    /*display:inline;*/
+    margin:0px;
+    padding: 0;
+    margin-bottom:1.2em;
+    font-size:12px;
+    list-style-image: none;
+    /*background:white url(../images/arrow_title.gif) no-repeat;*/
+    background-image:url(../images/exit_12x12.png);
+    background-repeat:no-repeat;
+    background-position:left center;
+    vertical-align: top;
+    
+    /*list-style-image: url(../images/arrow_title.gif);
+    list-style-position: inside;*/
+    padding-left: 1.5em;
+}
+
+#menu li img {
+    margin-right: 0.5em;
+}
+
+#menu li a:link,
+#menu li a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;    
+    font-weight:bold;
+}
+
+#menu li a:hover,
+#menu li a:active {
+    text-decoration: underline;
+}
+
+/* div for display identifier list */
+
+#identifierslist {
+    padding: 1em;
+    padding-top:0;
+    background-color: #F9F9F9;
+    border: 1px solid #E0E0E0;   
+    margin-bottom: 0;
+}
+
+#end_of_indentifiers {
+    border-top: 1px solid #E0E0E0;
+}
+
+/* Set up div for identifiers list */ 
+
+div.oneidentifier {
+    border-top: 1px solid #E0E0E0;
+    padding:0;
+    margin:0;
+}
+
+/* table for identifiers/button */
+
+table.identifier {
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+
+td.identifier {
+	font-weight: normal;
+    padding:0;
+    margin:0;
+}
+
+td.button {
+    text-align: right;
+    padding:0;
+    margin:0;
+}
+
+/* table for new identifier/button */
+
+
+#newidentifier {
+    padding: 1em;
+    padding-top:0;
+    background-color: #F9F9F9;
+    border: 1px solid #E0E0E0;   
+    margin-bottom: 0;
+}
+
+table.newidentifier {
+	font-weight: normal;
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+
+td.newidentifier {
+	font-weight: normal;
+    padding:0;
+    margin:0;
+}
+
+td.newbutton {
+    text-align: right;
+    padding:0;
+    margin:0;
+}
+
+
+
+/* Style for simple registration information */
+
+.sregfields {
+    padding: 1em;
+    padding-top:0;
+    padding-left:3em;
+    padding-right:3em;
+    background-color: #F9F9F9;
+    border: 1px solid #E0E0E0;   
+    margin-bottom: 0;
+}
+
+.sregfields table 
+{
+    border-bottom:1px solid #E0E0E0;  
+    padding:0;
+    margin:0;
+}
+
+.sregfields tr
+{
+    margin:0;
+}
+
+.sregfields td
+{
+    margin:0;
+}
+
+
+.sregfields table tr td 
+{
+    border-top:1px solid #E0E0E0;
+    margin-left: 0em;
+    vertical-align: middle;    
+    padding-top:0.3em;
+    padding-bottom:0.2em;    
+}
+
+.sreg_label 
+{
+    text-align: left;
+    width: 15em;
+}
+
+.sreg_value
+{
+    text-align: left;
+    width: 15em;
+}
+
+
+.sreg_input 
+{
+    width: 16em;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 11px;
+	color: black;
+    vertical-align: middle;	
+}
+
+.sreg_checkbox 
+{
+    vertical-align: middle;
+}
+
+ul.note {
+    padding-left: 1em;
+    padding-right: 2em;    
+}
+
+ul.note li {
+    list-style-image: url(../images/arrowsimple.png);
+    padding:0;
+    margin:0;
+}
+
+/* div used for sites list */
+
+.openid_url {
+    background: url(../images/openid-logo-small.gif) no-repeat left;
+    background-color: transparent;
+    padding-left: 16px;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 11px;
+	color: black;
+}
+
+.samllight {
+    background: url(../images/arrowsimple_direct_access.gif) no-repeat left;
+    background-color: transparent;
+    padding-left: 16px;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 11px;
+	color: black;
+}
+
+
+/* div for display identifier list */
+
+.id_confirm_buttons_zone {
+    margin: 1em;
+    padding:0;
+}
+
+.id_error_message_zone {
+    margin: 0 2em 0 2em;
+    padding:0;
+}
+
+#identifierslist {
+    padding: 1em;
+    padding-top:0;
+    background-color: #F9F9F9;
+    border: 1px solid #E0E0E0;   
+    margin-bottom: 0;
+}
+
+#end_of_indentifiers {
+    border-top: 1px solid #E0E0E0;
+}
+
+/* Set up div for site list */ 
+
+#authorization {
+    width:100%;
+}
+
+.confirm_buttons_zone {
+    margin: 0;
+    padding:0;
+    width: 35em;
+}
+
+.error_message_zone {
+    margin: 0;
+    padding:0;
+    width: 35em;
+}
+
+div.onesite {
+    border-top: 1px solid #E0E0E0;
+    padding:0;
+    margin:0;
+    margin-left: 1em;
+    margin-right: 1em;    
+}
+
+div.onesiteheader {
+    border-top: 1px solid #E0E0E0;
+    background-color: #E0E0E0;
+    padding:0;
+    margin:0;
+    margin-left: 1em;
+    margin-right: 1em;    
+}
+
+
+#shownositeyet {
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;    
+    padding:0;
+    margin:0;
+    margin-left: 1em;
+    margin-right: 1em;    
+}
+
+/* table for identifiers/button */
+
+table.site {
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+
+td.site {
+    padding:0;
+    margin:0;
+    text-align: left;
+}
+
+td.headerl {
+    padding:0;
+    text-align: left;
+    font-weight: bold;  
+}
+
+td.headerr {
+    padding:0;
+    padding-right: 2em;
+    text-align: right;
+    font-weight: bold;  
+}
+
+
+#end_of_sites {
+    border-top: 1px solid #E0E0E0;
+}
+
+/* styles for activity */
+
+.activity_zone {
+    padding-left: 0;
+    padding-right: 0;   
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#noactivity {
+    text-align: center;
+}
+
+table.logstable {
+    width: 100%;
+    border-collapse : collapse;
+    empty-cells: show;
+    text-align: left;
+    border:0;
+}
+
+td.logstabletitle {
+    padding-top:0.4em;
+    padding-bottom:0.4em;
+    padding:0.4em;    
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    background-color: #EFEFEF;
+    font-weight: bold; 
+}
+
+td.even-line {
+    /*border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    padding-top:0.4em;
+    padding-bottom:0.4em;
+    padding:0.4em;*/
+    background-color: white;
+}
+
+td.odd-line {
+    /*border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    padding-top:0.4em;
+    padding-bottom:0.4em;
+    padding:0.4em;*/
+    background-color: #F9F9F9;
+}
+
+td.odd-line .details {
+    text-align: center;
+}
+
+td.even-line .details {
+    text-align: center;
+}
+
+td.leftdetails{
+    text-align: right;
+    vertical-align: top;
+    width: 40%;
+}
+
+td.rightdetails {
+    text-align: left;
+    vertical-align: top;
+    width:60%;
+}
+
+table.logstable-even-line {
+    width: 100%;
+    border-collapse : collapse;
+    empty-cells: show;
+    background-color: white;
+}    
+
+table.logstable-odd-line {
+    width: 100%;
+    border-collapse : collapse;
+    empty-cells: show;
+    background-color: #F9F9F9;
+} 
+
+/* styles for help */
+
+
+h2.helpfirst {
+    font-weight: bold;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 16px;
+	color: black;
+    border-bottom: 1px solid #E0E0E0;
+    margin-top: 0;
+}
+
+
+h2.help {
+    font-weight: bold;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 16px;
+	color: black;
+	padding-top: 1em;
+    border-bottom: 1px solid #E0E0E0;   
+}
+
+div.helpzone {
+    text-align:left;
+    padding-bottom:1em;
+}
+
+/* styles for landing page*/
+
+
+.landingtext {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    padding: 0.2em;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.landingbox {
+    padding: 0em 0.3em 0.5em 0.3em;
+    margin-bottom: 1em;
+    border: 1px solid #999999;
+}
+
+.landingtext p {
+    margin-top: 0;
+    padding-left: 1em;
+}
+
+.landingtext h2 {
+    font-weight: bold;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	background: white url(../images/title-background.png) repeat-x scroll center top;
+    border-bottom:1px solid #EFEFEF;
+    margin : 0.3em 0;
+    padding : 0.2em;
+	font-size: 15px;
+    color: black;
+}
+
+.landingtext .arrowh2 {
+     margin-right: 0.5em;
+}
+
+.landingtext ol li {
+    list-style-image: none;
+}
+
+.landingbox table {
+    width: 100%;
+    border-collapse : collapse;
+    empty-cells: show;
+}
+
+.landingbox table tr td img {
+    margin: 0;
+}
+
+.gobutton {
+    padding-left: 60%;
+    text-align: left;
+}
+.gobutton img {
+    margin: 0;
+}
+
+.nextbuttons {
+    margin-top: 1.5em;
+    padding-top: 0;
+    padding-right: 0;
+    text-align: right;
+}
+
+.landingtext td.firstcoltitle {
+    vertical-align: top;
+    width:22em;
+    margin:0;
+    padding:0;
+    padding-right:1em;
+}
+
+.landingtext td.secondcoltitle {
+    vertical-align: top;
+    width:22em;
+    margin:0;
+    padding:0;
+}
+
+.landingtext td.firstcoltitle h2, 
+.landingtext td.secondcoltitle h2 {
+    margin-bottom : 0;
+}
+
+.landingtext td.firstcol {
+    vertical-align: top;
+    width:22em;
+    margin:0;
+    padding:0;
+    padding-right:1em;
+    padding-bottom: 1em;
+}
+
+.landingtext td.secondcol {
+    vertical-align: top;
+    width:22em;
+    margin:0;
+    padding:0;
+    padding-bottom: 1em;
+}
+
+.landingtext .logos {
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    
+}
+
+   
+.firstcol p, .secondcol p {
+    padding-left:  1em;
+    padding-right: 1.5em;
+    margin-bottom: 0.0em;
+}
+
+.secondcol .spacer {
+    padding: 0;
+    margin : 0;
+    margin-bottom: 0.2em;
+}
+
+
+.firstrow ul {
+    margin-bottom: 0;    
+}
+
+.myurlsbutton {
+    display:inline;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.logo-left {
+    text-align:left;
+    margin-bottom: 0.6em;
+}
+
+.logo-right {
+    text-align:right;
+    margin-bottom: 0.6em;
+}
+
+/* Style for buutons looking like buttons - Middle part */
+
+form.flowbuttons
+{
+    display: inline; 
+    padding: 0;
+    margin: 0;   
+}
+
+img.borderbuttonleft {
+    border: 0;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+img.borderbuttonright {
+    border: 0;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+img.borderbuttonleftspacer {
+    border: 0;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    margin-left:0.5em;
+}
+
+img.borderbuttonrightspacer {
+    border: 0;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    margin-right:0.5em;    
+}
+
+input.blackbutton {
+    background: url(../images/standard-button-middle.png) repeat-x;
+    font-family: arial, sans-serif, verdana, bitstream vera sans;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: black;
+    vertical-align: middle;    
+    border-style: none;
+    margin:0;
+    padding:0 0.5em;
+    padding-bottom: 2px;
+    height: 26px;
+    width:auto;
+    overflow:visible;
+    cursor: pointer;
+    cursor: hand;
+}
+
+/* special version for authorization management */
+
+input.blackbutton_delete_openid {
+    background: url(../images/standard-button-middle.png) repeat-x;
+    font-family: arial, sans-serif, verdana, bitstream vera sans;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: black;
+    vertical-align: middle;    
+    border-style: none;
+    margin:0;
+    padding:0 0.5em;
+    padding-bottom: 2px;
+    height: 26px;
+    width:auto;
+    overflow:visible;
+    cursor: pointer;
+    cursor: hand;
+}
+
+input.blackbutton_delete_orange_auth {
+    background: url(../images/standard-button-middle.png) repeat-x;
+    font-family: arial, sans-serif, verdana, bitstream vera sans;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: black;
+    vertical-align: middle;    
+    border-style: none;
+    margin:0;
+    padding:0 0.5em;
+    padding-bottom: 2px;
+    height: 26px;
+    width:auto;
+    overflow:visible;
+    cursor: pointer;
+    cursor: hand;
+}
+
+/* end of special version */
+
+input.blackarrowbutton {
+    background: url(../images/standard-button-middle.png) repeat-x;
+    font-family: arial, sans-serif, verdana, bitstream vera sans;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: black;
+    vertical-align: middle;    
+    border-style: none;
+    margin:0;
+    padding:0 0.5em 0 0;
+    padding-bottom: 2px;
+    height: 26px;
+    width:auto;
+    overflow:visible;
+    cursor: pointer;
+    cursor: hand;
+}
+
+input.orangebutton {
+    background: url(../images/standard-button-middle.png) repeat-x;
+    font-family: arial, sans-serif, verdana, bitstream vera sans;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: #FF6600;
+    vertical-align: middle;    
+    border-style: none;
+    margin:0;
+    padding:0 0.5em;
+    padding-bottom: 2px;
+    height: 26px;
+    width:auto;
+    overflow:visible;
+    cursor: pointer;
+    cursor: hand;
+}
+
+input.orangebutton_authorize {
+    background: url(../images/orange-button-middle.png) repeat-x;
+    font-family: arial, sans-serif, verdana, bitstream vera sans;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: white;
+    vertical-align: middle;    
+    border-style: none;
+    margin:0;
+    padding:0 0.5em;
+    padding-bottom: 2px;
+    height: 26px;
+    width:auto;
+    overflow:visible;
+    cursor: pointer;
+    cursor: hand;
+}
+
+input.smallbutton {
+    background: url(../images/small-button-middle.png) repeat-x;
+    font-family: arial, sans-serif, verdana, bitstream vera sans;
+    font-size: 11px;
+    color: black;
+    vertical-align: middle;    
+    border-style: none;
+    margin:0;
+    padding:0 0.5em;
+    padding-bottom: 1px;
+    height: 17px;
+    width:auto;
+    overflow:visible;    
+    cursor: pointer;
+    cursor: hand;
+}
+
+input.orangewhitebutton {
+    background: url(../images/orange-button-middle.png) repeat-x;
+    font-family: arial, sans-serif, verdana, bitstream vera sans;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: white;
+    vertical-align: middle;    
+    border-style: none;
+    margin:0;
+    padding:0 0.5em;
+    padding-bottom: 2px;
+    height: 26px;
+    width:auto;
+    overflow:visible;
+    cursor: pointer;
+    cursor: hand;
+}
+
+input.text {
+    width: 15em;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 11px;
+	color: black;
+    vertical-align:middle;	
+}
+
+
+/* style for activity navigation bar */
+
+#activitynavbar {
+    width: 100%;
+}
+
+#activitynavpages {
+    padding: 0.4em;
+    text-align: center;
+    width: 60%;    
+}
+
+#activitynavolder {
+    padding: 0.4em;
+    text-align: right;
+    width: 20%;    
+}
+
+#activitynavnewer {
+    padding: 0.4em;
+    text-align: left;
+    width: 20%;    
+}
+
+/* header light */
+
+#o_header_light * {
+	margin:0px;
+	padding:0px;
+	font-family:Arial, sans-serif;
+	font-size:12px;
+}
+
+
+#o_header_light p {
+	margin-top:0.5em;
+	margin-left:0.5em;
+}
+
+
+
+#o_header_light img { 
+    border:0px; 
+}
+
+#o_header_light ul { 
+    list-style:none;
+}
+
+#o_header_light	{
+    width:950px;
+    padding-bottom:2px;
+    margin:18px 0px 10px 20px;
+    background:url(../images/degradeSearch.png) repeat-x 0px 100%;
+}
+
+#o_header_light .perso	{
+    margin-top:17px;
+    width:948px;
+    height:24px;
+    color:#333333;
+    border:1px solid #999999;
+    background:url(../images/degrade.png) repeat-x;
+}
+
+#o_header_light .perso ul {
+    height:22px;
+    width:946px;
+    border:1px solid #FFFFFF;
+}
+
+#o_header_light .perso ul li {
+    padding:0px 5px 0px 0px;
+    line-height:22px;
+    margin: 0px;
+    float:left;   
+    list-style: none;   
+    height:22px;
+    background-repeat:no-repeat;
+}
+
+#o_header_light .perso ul li.identiteAbonne {
+    width:400px;
+    padding-left:9px;
+}
+
+#o_header_light .perso ul li.identiteAbonne div	{
+    display:inline;
+    padding-right:4px;
+    font-weight:bold;
+    font-size:90%;
+}
+
+/* Small hack for better positionning and sizing orange footer */
+
+#o_footer {
+    font-family:Arial,Verdana,Helvetica,sans-serif;
+    width:950px;
+    clear:both;
+    margin-top:15px;
+    background-color:white;
+}
+
+#o_footer ul.footer {
+    padding:0px;
+    margin:0px;
+    margin:0px 0px 0px 0px;
+    padding-top:3px;
+    border-top:3px solid #FF6600;
+    height:27px;
+}
+
+#o_footer_light {clear:both;font-family:Arial,Verdana,Helvetica,sans-serif;max-width:950px;min-width:880px;width:expression(document.body.clientWidth > 949 ? "950px":( document.body.clientWidth < 781? "780px" :"100%" ));}
+#o_footer_light ul.o_footer_light {padding:0px;margin:0px;margin:20px 0px 0px 0px;padding-top:3px;border-top:3px solid #FF6600;height:27px;}
+#o_footer_light ul.o_footer_light li {padding:0px;margin:0px;float:left;list-style:none;display:block;padding-top:4px;}
+#o_footer_light ul.o_footer_light li.logo {width:20%;padding-left:20px;padding-top:0px;}
+#o_footer_light ul.o_footer_light li.grey444444 {color:#444444;font-size:10px;padding-right:6px;padding-left:6px;}
+#o_footer_light a {text-decoration:none;}
+#o_footer_light a:hover {text-decoration:underline;}
+#o_footer_light a.withRightBorder {color:#000000;border-right:1px solid #FF6600;font-size:10px;padding-right:6px;padding-left:6px;}
+#o_footer_light a.withoutRightBorder {color:#000000;font-size:10px;padding-right:6px;padding-left:6px;}
+
+
+/*specific for advanced options*/
+#advanced_options_activation{
+    
+}
+#checkbox_img{
+	vertical-align:text-top;
+}
+
+#advanced_options_area{
+    padding: 1em;
+    background-color: white;
+    border: 1px solid #E0E0E0;   
+    margin-bottom: 0;
+}
+
+.details_options img{
+	vertical-align:text-top;
+}
+
+.advanced_options_area_details
+{
+}
+
+.advanced_options_area_detail
+{
+	padding-top:1em;
+	padding-left:2em;	
+}
+
+.advanced_options_area_detail_choice
+{
+	margin-top:6px;
+	border:1px solid #E0E0E0;
+	padding:0.6em;
+	margin-right:2.5em;
+	background-color: #F9F9F9;
+}
+.advanced_options_area_detail_choice img
+{
+	vertical-align:text-top;
+}
+
+#identifierslist_my_options
+{
+	border:none;
+	margin-left: 29px;	
+}
+.oneidentifier_my_options
+{
+	border:none;
+}
+.oneidentifier_my_options img
+{
+	vertical-align:text-top;
+}
+
+.label
+{
+	text-decoration: none;
+    color:#333333;
+    cursor:pointer;
+    background:transparent url(../images/arrowwoo.png) no-repeat scroll 0 50%;
+	padding-left:18px;
+	font-weight:bold;
+}
+	
+.advanced_options_area_detail a:link,
+.advanced_options_area_detail a:visited {
+    text-decoration: none;
+    color:#333333;
+    cursor:pointer;
+    background:transparent url(../images/arrowwoo.png) no-repeat scroll 0 50%;
+	padding-left:18px;
+}
+
+.advanced_options_area_detail a:hover,
+.advanced_options_area_detail a:active {
+    text-decoration: underline;
+    color:#333333;
+    cursor:pointer;
+    background:transparent url(../images/arrowwoo.png) no-repeat scroll 0 50%;
+	padding-left:18px;
+}
+
+input.orangebuttonclickable_myoptions {
+    background: url(../images/orange-button-middle.png) repeat-x;
+    font-family: arial, sans-serif, verdana, bitstream vera sans;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: white;
+    vertical-align: middle;    
+    border-style: none;
+    margin:0;
+    padding:0 0.5em;
+    padding-bottom: 2px;
+    height: 26px;
+    width:auto;
+    overflow:visible;
+    cursor: pointer;
+    cursor: hand;
+}
+
+input.standardbuttonclickable_myoptions {
+    background: url(../images/standard-button-middle.png) repeat-x;
+    font-family: arial, sans-serif, verdana, bitstream vera sans;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: black;
+    vertical-align: middle;    
+    border-style: none;
+    margin:0;
+    padding:0 0.5em;
+    padding-bottom: 2px;
+    height: 26px;
+    width:auto;
+    overflow:visible;
+    cursor: pointer;
+    cursor: hand;
+}
+
+input.orangebuttonunclickable_myoptions {
+    background: url(../images/standard-button-middle.png) repeat-x;
+    font-family: arial, sans-serif, verdana, bitstream vera sans;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: LightGrey;
+    vertical-align: middle;    
+    border-style: none;
+    margin:0;
+    padding:0 0.5em;
+    padding-bottom: 2px;
+    height: 26px;
+    width:auto;
+    overflow:visible;
+}
+
+input.standardbuttonunclickable_myoptions {
+    background: url(../images/standard-button-middle.png) repeat-x;
+    font-family: arial, sans-serif, verdana, bitstream vera sans;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: LightGrey;
+    vertical-align: middle;    
+    border-style: none;
+    margin:0;
+    padding:0 0.5em;
+    padding-bottom: 2px;
+    height: 26px;
+    width:auto;
+    overflow:visible;
+}
+
+
+
+
+
+/*specific for save_error_message*/
+
+.save_error_message { position:absolute; left:750px; top:200px; width:234px; border-left:1px solid gray; border-right:1px solid gray; background-color:white; z-index: 1;}
+.save_error_message .deco_top { position:absolute; left:-1px; top:-4px; background:url(../images/update_border_T.gif) no-repeat; width:237px; height:4px;}
+.save_error_message .deco_right { background:url(../images/update_border_R.gif) no-repeat right center; width:14px; height:22px; position:absolute; left:234px; top:50%; margin-top:-11px;  }
+.save_error_message .message_error_save { margin:0; padding:10px 0 10px; width:160px; margin-left:60px;}
+.save_error_message img { position:absolute; left:5px; margin-top:10px;} 
+.save_error_message .deco_bottom { position:absolute; left:-1px; bottom:-6px; background:url(../images/update_border_B.gif) no-repeat; width:237px; height:6px;}
+* html .save_error_message .deco_bottom { bottom:-12px; }
+
+/*specific for update_message*/
+
+.update_message { position:absolute; left:750px; top:200px; width:234px; border-left:1px solid gray; border-right:1px solid gray; background-color:white; z-index: 1;}
+.update_message .deco_top { position:absolute; left:-1px; top:-4px; background:url(../images/update_border_T.gif) no-repeat; width:237px; height:4px;}
+.update_message .deco_right { background:url(../images/update_border_R.gif) no-repeat right center; width:14px; height:22px; position:absolute; left:234px; top:50%; margin-top:-11px;  }
+.update_message .updated { margin:0; padding:10px 0 10px; width:160px; margin-left:60px;}
+.update_message .message_error_save { margin:0; padding:10px 0 10px; width:160px; margin-left:60px;}
+.update_message img { position:absolute; left:5px; margin-top:10px;} 
+.update_message .deco_bottom { position:absolute; left:-1px; bottom:-6px; background:url(../images/update_border_B.gif) no-repeat; width:237px; height:6px;}
+* html .update_message .deco_bottom { bottom:-12px; }
+
+
+
+.cgu_zone {
+    border-top: 1px solid #E0E0E0;
+    margin-top: 16px;
+    padding-top: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* On big div for everyone */
+#bigdiv {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+
+/* Div for information page */
+.infodiv {
+    padding-left: 1em;   
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.infodiv table,
+.infodiv tr,
+.infodiv td {
+    padding:0;
+    margin:0;
+}
+
+/* ... and associated styles. */
+
+.infodiv .infomessage {
+    vertical-align:middle;
+    margin:0;
+    padding:0;
+    padding-left: 3em;
+}
+
+.infobacklink {
+    border-top: 1px solid #E0E0E0;
+    padding-top: 2em;
+    padding-left: 120px;  
+}
+
+.infobacklink a:link,
+.infobacklink a:visited {
+    padding-left: 1em;
+    color: black;
+    background: url(../images/arrowurl.png) no-repeat left;
+    text-decoration: none;
+    vertical-align:middle;
+}
+
+.infobacklink a:hover,
+.infobacklink a:active {
+    text-decoration: underline;
+}
+
+/* Div for error page */
+
+/* Div for information page */
+.errordiv {
+    padding-left: 1em;   
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.errordiv table,
+.errordiv tr,
+.errordiv td {
+    padding:0;
+    margin:0;
+}
+
+/* ... and associated styles. */
+
+.errordiv .errormessage {
+    vertical-align:middle;
+    margin:0;
+    padding:0;
+    padding-left: 3em;
+}
+
+.errorbacklink {
+    border-top: 1px solid #E0E0E0;
+    padding-top: 3em;
+    padding-left: 120px;  
+}
+
+.errorbacklink a:link,
+.errorbacklink a:visited {
+    padding-left: 1em;
+    color: black;
+    background: url(../images/arrowurl.png) no-repeat left;
+    text-decoration: none;
+    vertical-align:middle;
+}
+
+.errorbacklink a:hover,
+.errorbacklink a:active {
+    text-decoration: underline;
+}
+
+/* The main div containing all other contents div*/
+
+#maindiv {
+    border: 1px solid #949494;
+    padding: 2em;
+    padding-top: 1.5em;
+    background-color: white;
+    width: 45em;
+}
+
+
+/*new design*/
+
+.head_area
+{
+	height:10px;
+	padding:10px;
+}
+
+.head_area table
+{
+	width:100%;
+	height:100%;
+}
+
+.head_area #head_left
+{
+	text-align: left;
+    vertical-align: middle;
+}
+
+.head_area #head_right
+{
+	text-align: right;
+    vertical-align: middle;
+}
+
+.body_area
+{
+	background: white url(../images/bgHtml_degrade.png ) repeat-x top left;
+	/*height:350px;*/
+	width:1003px;
+	height: auto !important;
+	height: 350px;
+	min-height: 350px;
+	position: relative;
+}
+
+
+#left_panel
+{	
+	text-align: center;
+    background-color: white;
+    margin-left: 50px;
+    _margin-left: 25px;
+    margin-right: 25px;
+    width:250px;
+    float:left;
+}
+
+#left_panel_bottom
+{   
+/*	clear: both;*/
+    text-align: center;
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 25px;
+/*    top: 325px;*/
+/*    !top: 325px;*/
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    cursor: pointer;
+    /*width:250px;
+    height:250px;*/
+    /*float:left;*/
+}
+
+
+#start_guide_ad
+{
+    position:relative;
+    /*padding:1em;*/
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+}
+
+#flash_teaser
+{
+    cursor: pointer;
+}
+
+#follow_quick_start_guide
+{
+    width: 100%;
+    text-align: right;
+}
+
+#div_2_possibilities
+{
+    width: 100%;
+    margin-top:2em;
+    margin-bottom:2em;
+}
+
+#table_2_possibilities
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table_2_possibilities td
+{
+    width: 50%;
+    vertical-align:top;
+    /*padding-right: 1em;
+    padding-left: 1em;*/
+}
+
+.text_intro_landing
+{
+    padding-left:1em;
+}
+
+#div_possiblity_choice_1
+{
+    
+}
+
+#div_possiblity_choice_2
+{
+    
+}
+
+.div_for_number
+{
+    height:100%;
+    float:left;
+    margin-right:1em;
+}
+
+.td_choice_1
+{
+    border-right:1px solid #e0e0e0;
+    padding-right: 2em;
+    padding-left: 1em;
+    width:50%;
+}
+
+.td_choice_2
+{
+    padding-left: 2em;
+    padding-right: 1em;
+    width:50%;
+}
+
+.title_choice
+{
+    color: #FF6600;
+    font-size: 14px;
+    margin-bottom: 1em;
+}
+
+.div_button_orangeauth
+{
+    text-align:center;
+}
+
+#close_overlay
+{
+    cursor: pointer;
+    text-align:right;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.alink_landing_foot:link,
+.alink_landing_foot:visited
+{
+    color: black;
+    background-color: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    padding-left: 0.5em;
+}
+
+.alink_landing_foot:hover,
+.alink_landing_foot:active {
+    text-decoration: underline;
+    padding-left: 0.5em;
+}
+
+#div_landing_foot img
+{
+    vertical-align: baseline;
+}
+
+#landing_foot_left
+{
+    text-align: left;
+    width:33%;
+}
+
+#landing_foot_center
+{
+    text-align: center;
+    width:33%;
+}
+
+#landing_foot_right
+{
+    text-align: right;
+    width:33%;
+}
+
+#overlay_content_landing
+{
+    width: auto;
+}
+
+#div_left_panel
+{	
+    border: 1px solid #949494;
+    padding: 2em;
+    padding-top: 1.5em;
+    background-color: white;
+}
+
+#right_panel
+{	
+    background-color: white;
+    /*margin-left: 325px;*/
+    width: 50em;
+    position:relative;
+    float:left;
+    margin-bottom: 15px;
+}
+
+#div_right_panel
+{	
+    border: 1px solid #949494;
+    padding: 2em;
+    padding-top: 1.5em;
+    background-color: white;
+    height: auto !important;
+    height: 193px;
+    min-height: 193px;
+}
+
+
+#div_right_panel_bottom
+{
+	border: 1px solid #949494;
+	padding: 2em;
+    padding-top: 1.5em;
+    background-color: white;
+    background: url(../images/arrow_merge.gif) no-repeat 98% ;
+}
+#merge_div
+{
+    width: 35em;
+    font-size: 12px;
+}
+		
+#right_panel_bottom
+{
+	float:left;
+	margin-left:325px;
+	_margin-left: 163px;
+	margin-top:15px;
+	margin-bottom:35px;
+	position:relative;
+	width:50em;
+	cursor: pointer;
+}
+
+#title_merge
+{
+	padding-left:16px;
+	font-weight: bolder;
+	background: url(../images/arrow_title.gif) no-repeat;
+}
+#explanation_merge
+{
+	margin-top: 1em;
+}
+
+
+
+/*SHADOW*/
+
+.tile {
+margin: 0;
+border: 0;
+padding: 0;
+font-size: 0;
+position: absolute;
+background-repeat: repeat;
+background-position: left top;
+}
+
+.shadow2, .shadow2float
+{
+    position:relative;
+}
+
+.shadow2 .lt2, .shadow2 .lc2, .shadow2 .lb2 {
+left: -6px !important;
+width: 16px;
+}
+.shadow2 .rt2, .shadow2 .rc2, .shadow2 .rb2 {
+right: -8px;
+_right: -9px;
+width: 9px;
+}
+.shadow2 .lt2, .shadow2 .ct2, .shadow2 .rt2 {
+top: -6px;
+height: 19px;
+}
+.shadow2 .lb2, .shadow2 .cb2, .shadow2 .rb2 {
+bottom: -11px;
+_bottom: -11px;
+height: 12px;
+}
+.shadow2 .ct2, .shadow2 .cb2 {
+left: 10px;
+right: 1px !important;
+_width: expression(this.offsetParent.offsetWidth-11 + "px");
+}
+.shadow2 .lc2, .shadow2 .rc2 {
+top: 13px;
+bottom: 1px !important;
+_height: expression(this.offsetParent.offsetHeight-14 + "px");
+}
+
+
+.shadow2,.shadow2float {
+background-color: white;
+}
+.shadow2 .lt2,.shadow2float .lt2 {
+background-image: url(../images/shadow2_lt.png) !important;
+!background-image: none;
+!filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/shadow2_lt.png", sizingMethod="scale");
+}
+.shadow2 .ct2,.shadow2float .ct2 {
+background-image: url(../images/shadow2_ct.png ) !important;
+!background-image: none;
+!filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/shadow2_ct.png", sizingMethod="scale");
+}
+.shadow2 .rt2,.shadow2float .rt2 {
+background-image: url(../images/shadow2_rt.png ) !important;
+!background-image: none;
+!filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/shadow2_rt.png", sizingMethod="scale");
+}
+.shadow2 .lc2,.shadow2float .lc2 {
+background-image: url(../images/shadow2_lc.png ) !important;
+!background-image: none;
+!filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/shadow2_lc.png", sizingMethod="scale");
+}
+.shadow2 .rc2,.shadow2float .rc2 {
+background-image: url(../images/shadow2_rc.png ) !important;
+!background-image: none;
+!filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/shadow2_rc.png", sizingMethod="scale");
+}
+.shadow2 .lb2,.shadow2float .lb2 {
+background-image: url(../images/shadow2_lb.png ) !important;
+!background-image: none;
+!filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/shadow2_lb.png", sizingMethod="scale");
+}
+.shadow2 .cb2,.shadow2float .cb2 {
+background-image: url(../images/shadow2_cb.png ) !important;
+!background-image: none;
+!filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/shadow2_cb.png", sizingMethod="scale");
+}
+.shadow2 .rb2, .shadow2float .rb2 {
+background-image: url(../images/shadow2_rb.png ) !important;
+!background-image: none;
+!filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/shadow2_rb.png", sizingMethod="scale");
+}
+
+.shadow2float .lt2 {
+    width: 16px;
+    top: -6px;
+    height: 19px;
+    left: -6px;
+    _left: expression((-((this.offsetParent.offsetWidth)/2))-6);
+}
+
+.shadow2float .rt2 {
+	right: -8px;
+    width: 9px;
+    top: -6px;
+    height: 19px;
+}
+
+.shadow2float .rb2 {
+    right: -8px;
+    width: 9px;
+    bottom: -11px;
+    height: 12px;
+}
+
+.shadow2float .lb2 {
+	width: 16px;
+	bottom: -11px !important;
+    _bottom: -12px;
+    height: 12px;
+    left: -6px ;
+    _left: expression((-((this.offsetParent.offsetWidth)/2))-6);
+}
+
+.shadow2float .rc2 {
+    right: -8px;
+    width: 9px;
+    top: 13px;
+    bottom: 1px;
+    _height: expression((this.offsetParent.offsetHeight-14) + "px");
+}
+
+.shadow2float .cb2 {
+    bottom: -11px !important;
+    _bottom: -12px;
+	height: 12px;
+	right: 1px !important;
+    _width: expression((this.offsetParent.offsetWidth)-11 + "px");
+	left: 10px;
+	_left: expression((-((this.offsetParent.offsetWidth)/2))+10);
+}
+
+.shadow2float .lc2 {
+	left: -6px;
+	_left: expression((-((this.offsetParent.offsetWidth)/2))-6);
+	width: 16px;
+	top: 13px;
+	bottom: 1px !important;
+	_height: expression((this.offsetParent.offsetHeight-13) + "px");
+}
+
+.shadow2float .ct2 {
+	top: -6px;
+	height: 19px;
+	left: 10px;
+	_left: expression((-((this.offsetParent.offsetWidth)/2))+10);
+	right: 1px !important;
+	_width: expression((this.offsetParent.offsetWidth)-11 + "px");
+}
+
+/* OVERLAYS */
+
+.overlay_background
+{
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width: expression(this.offsetParent.offsetWidth);
+    height: expression(this.offsetParent.offsetHeight);
+    
+    position:fixed;
+    _position:absolute;
+    background-color:black;
+    
+    /* FF */
+    -moz-opacity: 0.5 ; 
+    /* IE8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; 
+	/* IE > 8 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+	/*A priori IE8 devrait comprendre cette syntaxe mais il semble qu'il y a (avait) un bug */ 
+	opacity: 50; 
+	filter: alpha(opacity=50);
+	opacity:0.5;
+	
+    z-index:1;
+}
+
+.overlay_background_swf
+{
+    top:0;
+    left:0;
+    right:0;
+    width: expression(this.offsetParent.offsetWidth);
+    /*height: expression(this.offsetParent.offsetHeight);*/
+    /*height: expression(screen.height);*/
+    /*height:700px;*/
+    /*bottom:0;*/
+    
+    /*background-color:black;*/
+    
+    /* FF */
+    /*-moz-opacity: 0.5 ; */
+    /* IE8 */
+	/*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; */
+	/* IE > 8 */
+	/*filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);*/
+	/*A priori IE8 devrait comprendre cette syntaxe mais il semble qu'il y a (avait) un bug */ 
+	/*opacity: 50; 
+	filter: alpha(opacity=50);
+	opacity:0.5;*/
+	
+    position: absolute;
+    z-index:100000;
+}
+
+.overlay_content
+{
+	z-index:2;
+	background-color:white;
+	border:5px solid gainsboro;
+	position: fixed;
+    _position:absolute;
+	padding: 10px;
+	width: 40em;
+	overflow: hidden;
+}
+
+
+/* MyOptions */
+
+.div_radio_valid_ident
+{
+	float:left;
+	width:50%;
+}
+
+.table_radio_valid_ident
+{
+    width:100%;
+    border:0;
+}
+
+.table_radio_valid_ident td
+{
+    width:50%;
+    text-align: left;
+}
+
+
+.div_subwidetext_left
+{
+    float:left;
+    width:18%;
+}
+
+.div_subwidetext_right
+{
+    float:left;
+    width:82%;
+}
+
+.current_option_title
+{
+	font-size:15px;
+	font-weight:bolder;
+	color:#FF6600;
+}
+.alternative_option_title
+{
+    font-size:15px;
+    font-weight:bolder;
+    color:black;
+}
+
+.option_explanation
+{
+    margin-bottom: 1em;
+}
+
+.possible_option_title
+{
+    font-size:13px;
+    font-weight:bolder;
+    color:black;
+    background:white url(../images/arrow_title.gif) no-repeat;
+    padding-left: 1.5em;
+}
+
+.possible_option_title_chosen
+{
+    font-size:13px;
+    font-weight:bolder;
+    color:#FF6600;
+    background:white url(../images/arrow_title.gif) no-repeat;
+    padding-left: 1.5em;
+}
+
+.advanced_option_subsection_title
+{
+	font-size:12px;
+	font-weight:bolder;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.table_auto_key_option
+{
+    width:100%;
+    /*border: 1px solid lightGrey;*/
+}
+
+.table_auto_key_option tr
+{
+    /*height: 2em;*/
+}
+
+.table_perso_key_option
+{
+    width:100%;
+    border:0 none;
+    border-collapse: collapse;
+}
+
+.table_perso_key_option tr
+{
+	/*height: 2em;*/
+}
+.table_perso_key_option td
+{
+	padding-left:0.5em;
+	padding-right:0.5em;
+	vertical-align: middle;
+}
+
+.table_perso_key_option_header_line td
+{
+    background-color:#FEECD8;
+    font-weight:bolder;
+    border-bottom: 2px solid lightGrey;
+}
+
+.table_perso_key_option_content_line td
+{
+    border-bottom: 1px solid lightGrey;
+}
+
+.div_personalized_key_chosen, #div_auto_key_chosen
+{
+    font-weight:bolder;
+    color:#FF6600;
+    padding-right: 0.7em;
+}
+
+.div_button_choose_this_option
+{
+	text-align:right;
+}
+
+.radio_valid_ident
+{
+    vertical-align: text-bottom;
+    margin-right: 0.5em;
+}
+
+.radio_valid_ident_container
+{
+    height: 1.5em;
+    margin-top:1em;
+}
+
+.separator_div
+{
+	border-top: 1px solid #E0E0E0;
+	height: 0;
+	margin-top: 1.5em;
+	width: 100%;
+	
+}
+
+.myoptions_explanation
+{
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom:1.5em;
+}
+
+/* Overlays prompt suppress key and suppress site*/
+
+.div_overlay_prompt
+{
+	font-weight:bolder;
+	font-size: 14px;	
+}
+
+.openid_key_to_suppress
+{
+	color:#FF6600;
+}
+
+.table_overlay_prompt
+{
+	border-collapse:collapse;
+	margin-top:1em;
+	width:100%;
+}
+
+.td_image_overlay_prompt
+{
+    border-top:1px solid #E0E0E0;
+    border-bottom:1px solid #E0E0E0;
+    padding-bottom:1em;
+    padding-top:1em;
+    width: 109px;
+    text-align:center;
+}
+
+#overlay_content1 {
+    width: 550px;
+}
+
+.td_content_overlay_prompt
+{
+    border-top:1px solid #E0E0E0;
+    border-bottom:1px solid #E0E0E0;
+    padding-bottom:1em;
+    padding-top:1em;
+}
+
+.td_buttons_overlay_prompt
+{
+    text-align:right;
+    padding-top:2em;
+}
+
+/* CSS for table with new design */
+
+.div_container_for_table_new_design
+{
+    border-top:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+    border-left:1px solid #cccccc;
+    border-right:1px solid #cccccc;
+    padding-top:0.3em;
+    padding-left:0.3em;
+    padding-right:0.3em;
+    padding-bottom:0;
+}
+
+.table_new_design
+{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.table_new_design tr
+{
+	/*height:2em;*/
+}
+
+.table_new_design_title_line
+{
+    font-weight:bolder;
+    text-align:left;
+    background-color:#EEEEEE;
+}
+
+.table_new_design_title_line td
+{
+    padding-left:0.5em;
+    border-bottom:2px solid #cccccc;
+}
+
+.table_new_design_title_line_td_left
+{
+}
+
+.table_new_design_title_line_td_middle
+{
+    border-left:1px solid darkgrey;
+}
+
+.table_new_design_title_line_td_right
+{
+    border-left:1px solid darkgrey;
+}
+
+.table_new_design_title_line_td_none
+{
+    border:0;
+}
+
+.table_new_design_lambda_line
+{
+    border:0;
+}
+
+.table_new_design_lambda_line td
+{
+    padding-left:0.5em;
+    padding-right:0.5em;
+    border-bottom:1px solid #E0E0E0;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    
+}
+
+.table_new_design_lambda_line_td_right_aligned
+{
+    text-align:right;
+    width:45px;
+}
+
+.table_new_design_lambda_line_specific_activity_log
+{
+    border:0;
+}
+
+.table_new_design_lambda_td_info_line
+{
+    padding:0;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    border-bottom:1px solid #E0E0E0;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+}
+
+.delete_cross
+{
+    cursor: pointer;
+    border: solid 1px #CCCCCC;
+    /*
+    behavior: expression(this.runtimeStyle.border = "solid 1px #CCCCCC")
+    */
+}
+
+.information_mark
+{
+    border: solid 1px #CCCCCC;
+    /*
+    behavior: expression(this.runtimeStyle.border = "solid 1px #CCCCCC")
+	*/
+}
+
+.moredetails_expand
+{
+    cursor: pointer;
+}
+.lessdetails_collapse
+{
+    cursor: pointer;
+}
+.orange_bold_text
+{
+    color: #FF6600;
+    font-weight: bolder;
+}
+
+/*HACK for IE6 transparency*/
+/*
+* html img,
+* html .png{
+position:relative;
+behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/images/transparent.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true)
+);
+}*/

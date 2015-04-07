@@ -1,0 +1,1374 @@
+/* general */
+
+.float-right
+{
+	float:right;
+}
+
+.logo-max
+{
+	width: 90px;
+	height: 90px;
+}
+
+.logo
+{
+	width: 90px;
+	height: 90px;
+}
+
+.privacy-section
+{
+	margin: 0;
+	padding: 0;		
+}
+
+.privacy-section-top
+{
+	line-height: 20px;
+	width: 100%;
+}
+
+.privacy-section-middle
+{
+	width: 100%;	
+}
+
+.privacy-section-bottom
+{
+	line-height: 12px;
+	width: 100%;
+}
+
+.privacy-section-content
+{
+	margin: -20px 30px 20px 30px; 
+}
+
+.privacy-section-remove-margin
+{
+	margin: 0;
+	padding: 0;
+}
+
+.privacy-icon
+{
+	line-height: 14px;
+	font-size: 1em;
+	padding-left: 14px;
+}
+
+.privacy-right-arrow
+{
+	background-image: url(../images/privacy-right-arrow.gif);
+}
+
+.privacy-previous
+{
+	background-image: url(../images/privacy-previous.gif);
+}
+
+.privacy-next
+{
+	background-image: url(../images/privacy-next.gif);
+}
+
+.privacy-hr
+{
+	border-top: 1px solid #E0E0E0;
+	margin-bottom: -5px;
+	margin-top: 10px;
+}
+
+.privacy-shifted-hr
+{
+	border-top: 1px solid #E0E0E0;
+	margin-bottom: -5px;
+	margin-top: 0px;
+	margin-left:300px;
+}
+
+.tpsname
+{
+	font-weight: bold;
+}
+/* panel menu */
+#privacy-menu-section
+{
+	float: left;
+	/*margin-left: 55px;*/
+	width: 264px;
+}
+
+#privacy-menu-section .privacy-section-top
+{
+	background: url(../images/bg-small-top.png) no-repeat;
+}
+
+#privacy-menu-section .privacy-section-middle
+{
+	background: url(../images/bg-small-middle.png) repeat-y;
+}
+
+#privacy-menu-section .privacy-section-bottom
+{
+	background: url(../images/bg-small-bottom.png) no-repeat;
+}
+
+#privacy-menu-section li#menu_underline
+{
+    border-top: 1px solid lightGrey;
+    margin:0px;
+    padding: 0px;
+    margin-right:2em;
+    list-style-image: none;
+    background-image:none;
+    vertical-align: top;
+    padding-left: 1.5em;	
+}
+
+/* panel content */
+#privacy-main-section
+{
+	float: left;
+	width: 563px;
+	margin-left: 11px;
+	margin-bottom: 60px;
+}
+
+#privacy-main-section .privacy-section-top
+{
+	background: url(../images/bg-large-top.png) no-repeat;
+}
+
+#privacy-main-section .privacy-section-middle
+{	
+	background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../images/bg-large-middle.png");
+    background-position: 0 0;
+    background-repeat: repeat-y;
+	
+}
+
+#privacy-main-section .privacy-section-bottom
+{
+	background: url(../images/bg-large-bottom.png) no-repeat;
+}
+
+#privacy-main-section .privacy-section-content
+{
+	width: 510px;
+	margin-left: 20px;
+}
+/* */
+
+#privacy-title
+{
+	font-size: 20pt;
+    color: #FF6600;
+    margin-bottom:40px;	
+    font-weight: normal;
+}
+
+#privacy-content h3, #privacy-content h4, #privacy-content h5
+{
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+#privacy-content h3
+{
+	color: #FF6600;
+}
+
+#privacy-content h4
+{
+    font-weight: bold;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 11px;
+	color: black;
+	border: none;
+	margin-bottom: 0.5em;
+}
+
+#privacy-content ul
+{
+	list-style: none;	
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#privacy-content li
+{
+	list-style-image: none;
+}
+
+#privacy-content p
+{
+	margin: 0;
+	padding: 0;
+}
+#privacy-content .invisible
+{
+	display: none;
+}
+
+#privacy-content .checked-icon
+{	
+	padding: 0;
+	margin: 0;	
+	background:white url(../images/ok-small.gif) no-repeat;
+	padding-left: 10px; 
+	line-height: 10px;
+	font-size: 10px;
+}
+
+#privacy-content .delete-icon
+{
+	padding: 0;		
+	background: white url(../images/delete_cross.png) no-repeat;
+	padding-right: 10px; 
+	line-height: 10px;
+	font-size: 10px;	
+}
+
+#privacy-content .blank
+{
+	height: 10px;
+	display: block;
+}
+#privacy-content .hblank
+{
+	width: 10px;
+	display: in-line;
+}
+#privacy-content img.profile-picture
+{
+	border:1px solid #D0D0D0;
+	width: 30px;
+	height: 30px;
+}
+/* POLICIES.DO */
+#privacy-policies-content h3
+{
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+#privacy-policies-content h4
+{
+	color: #FF6600;
+}
+#privacy-policies-content h5
+{
+    font-weight: bold;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 11px;
+	color: black;
+	border: none;
+	margin-bottom: 0.5em;
+}
+#privacy-policies .fold-icon
+{	
+	padding: 0;
+	margin: 0;
+	margin-right: 5px;
+	padding-left: 10px; 
+	line-height: 6px;
+	font-size: 6px;	
+	background:white url(../images/expand_mark.png) no-repeat;
+}
+#privacy-policies .unfold-icon
+{
+	padding: 0;
+	margin: 0;
+	margin-right: 5px;
+	padding-left: 10px; 
+	line-height: 6px;
+	font-size: 6px;
+	background:white url(../images/collapse_mark.png) no-repeat;
+}
+#privacy-policies .delete-icon
+{
+	position: absolute;
+	right: 0; top: 0;
+	display: block;
+}
+#privacy-policies .privacy-policies-partner-item
+{
+	width: 100%;
+}
+#privacy-policies div.privacy-policies-partner-content
+{
+	position: relative;
+	left: 130px;
+	width: 370px;
+	
+}
+#privacy-policies  li.privacy-policies-attribute
+{
+	position: relative;		
+	width: 100%;		
+}
+#privacy-policies ul.privacy-policies-families-list
+{	
+	width: 100%;
+}
+#privacy-policies  li.privacy-policies-family-item
+{
+	width: 100%;	
+}
+
+#privacy-policies  li.privacy-policies-family-item, 
+#privacy-policies  li.privacy-policies-attribute
+{
+	border-top:1px solid #E0E0E0;				
+}
+
+#privacy-policies  div.privacy-policies-family-content
+{
+	position: relative;
+	left: 10px;
+	width: 340px;
+}
+
+#privacy-policies  .privacy-policies-partner-logo
+{
+	position: absolute;
+	top: 0; left: 0;	
+	margin-left: -120px;
+	border: 0;	
+}
+#privacy-policies .privacy-policies-attribute-top
+{
+	position: absolute;
+	width: 100%
+}
+#privacy-policies .privacy-policies-attribute-label .checked-icon
+{
+	position: absolute;
+	left: -15px;
+}
+#privacy-policies .privacy-policies-attribute-label
+{
+	width: 300px;
+	position: relative;
+	left: 15px;
+}
+#privacy-policies  li.privacy-policies-partner-item
+{
+	border: 1px solid #D0D0D0;	
+	margin-bottom: 10px;	
+	padding: 5px;
+	position: relative;
+}
+
+#privacy-policies  a.delete-link, 
+#privacy-policies  a.toggle-link
+{
+	text-decoration: none;
+	cursor: hand;
+}
+
+#privacy-policies a.toggle-link
+{
+    font-weight: bold;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 11px;
+	color: black;
+	border: none;
+	margin-bottom: 0.5em;	
+}
+
+#privacy-policies  table.privacy-policies-profile
+{
+	border-collapse: collapse;
+	
+	width: 100%;
+}
+
+#privacy-policies  table.privacy-policies-profile td
+{
+	
+}
+
+#privacy-policies  table.privacy-policies-profile td.attribute-name
+{
+	width: 40%;
+}
+#privacy-policies  table.privacy-policies-profile td.profile-value
+{
+	width: 60%;	
+	color: #909090;
+}
+#privacy-policies  .privacy-policies-tooltip
+{
+	position: absolute;
+	top: 0;
+	right: -50px;
+	margin-top: -20px;
+	border: 1px solid black;
+	background-color: #E0E0E0;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-weight: normal;
+	font-size: 11px;	
+}
+
+/* POLICIES.DO: general */
+#privacy-general-policies form
+{
+	margin: 0;
+}
+#privacy-general-policies img.borderbuttonside
+{
+	border: 0;vertical-align: middle;padding: 0;margin: 0;
+}
+#privacy-general-policies .button
+{
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 13px; font-weight: bold;
+	letter-spacing: 0;
+	vertical-align: middle;
+	border-style: none;
+	margin:0;
+	padding:0 0.5em;padding-bottom: 2px;
+	height: 26px;width:auto;
+	overflow:visible;
+	cursor: pointer;cursor: hand;
+	text-transform: lowercase;	
+}
+#privacy-general-policies .confirm
+{
+	background: url(../images/orange-button-middle.png) repeat-x;
+	color: white;
+}
+#privacy-general-policies .submit-div
+{
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+/* HISTORY.DO */
+/* HISTORY.DO: onglets */
+#privacy-history-onglets
+{
+	width: 515px;
+	height: 30px;
+	font-size: 12px;
+	background: url(../images/bg_onglets.png) 0px 29px repeat-x;
+	text-align: right;
+}
+#privacy-history-onglets .onglet
+{	
+	font-family: arial;
+	font-weight: bold;
+	text-align: center;
+	width: 150px;
+	line-height: 30px;
+	height: 30px;
+	list-style: none;	
+	float: right;	
+	margin-right: 3px;
+}
+#privacy-history-onglets .onglet.selected
+{
+	color: #FF6600 ;
+	background: url(../images/bg_onglet_selected-contour.png) no-repeat;
+}
+#privacy-history-onglets .onglet.not-selected
+{
+	background: url(../images/bg_onglet_notselected-contour.png) no-repeat;
+}
+#privacy-history-onglets .selectable
+{
+	color: black;
+	font-family: arial;
+	font-weight: bold;
+	text-decoration: none;
+}
+#privacy-history-onglets .selectable:hover
+{
+	text-decoration: underline;
+}
+#privacy-history-onglets .onglet.onglet-last
+{
+	margin-right: 10px;
+}
+
+/* HISTORY.DO: content */
+#privacy-history table td
+{
+	text-align: center;
+}
+#privacy-history #privacy-history-page-list
+{
+	position: relative;
+	text-align: center;	
+	width: 100%;
+}
+#privacy-history #privacy-history-page-list-newer
+{
+	position: absolute;
+	left:0;
+	width: 150px;
+	text-align: left;
+}
+#privacy-history #privacy-history-page-list-older
+{
+	position: absolute;
+	right:0;
+	width: 150px;
+	text-align: right;
+}
+
+#privacy-history #privacy-history-page-list li, 
+#privacy-history #privacy-history-page-list p, 
+#privacy-history #privacy-history-page-list ul
+{
+	display: inline;
+}
+
+#privacy-history #privacy-history-page-list a.currentPage
+{
+	text-decoration: none;
+	color: black;
+}
+
+/* TPS.DO */
+#privacy-tps table
+{
+	width: 100%;
+}
+#privacy-tps td
+{
+	width: 33%;	
+	border: 1px solid white;
+}
+#privacy-tps div.logo-max
+{
+	border: 0;
+	margin: auto;
+}
+#privacy-tps .logo
+{
+	margin: auto;	
+}
+#privacy-tps .privacy-tps-link
+{
+	text-decoration: none;
+}
+#privacy-tps .privacy-tps-link-content
+{
+	text-align: center;
+	margin: 20px;
+	text-decoration: none;
+}
+#privacy-tps .privacy-tps-link-label
+{
+	text-align: center;
+}
+#privacy-tps .hover
+{
+	border: 1px solid #FF6600; 
+}
+
+/*	INTERACTION.DO	*/
+#privacy-interaction .fold-icon
+{
+	padding: 0;
+	margin: 0;
+	margin-right: 5px;
+	padding-left: 12px; 
+	line-height: 12px;
+	font-size: 12px;
+	background:white url(../images/more-info.png) no-repeat;		
+}
+
+#privacy-interaction .unfold-icon
+{
+	padding: 0;
+	margin: 0;
+	margin-right: 5px;
+	padding-left: 12px; 
+	line-height: 12px;
+	font-size: 12px;
+	background:white url(../images/less-info.png) no-repeat;
+}
+#privacy-interaction .fold-icon2
+{
+	padding: 0;
+	margin: 0;
+	margin-right: 5px;
+	padding-left: 12px; 
+	line-height: 12px;
+	font-size: 12px;
+	background:white url(../images/more-info.png) no-repeat;		
+}
+
+#privacy-interaction .unfold-icon2
+{
+	padding: 0;
+	margin: 0;
+	margin-right: 5px;
+	padding-left: 12px; 
+	line-height: 12px;
+	font-size: 12px;
+	background:white url(../images/less-info.png) no-repeat;
+}
+#privacy-interaction li
+{
+	margin-left: 20px;
+}
+#privacy-interaction #privacy-interaction-help
+{
+	margin-left: 30px;
+}
+#privacy-interaction div#privacy-interaction-submit
+{
+	margin-left: 300px;
+	margin-top: 0px;
+	text-align: center;
+	
+}
+
+#privacy-interaction div#privacy-interaction-submit-richProfil
+{
+	margin-left: 190px;
+	margin-top: 0px;
+	text-align: center;
+	
+	
+}
+
+#privacy-interaction div#privacy-cgu-div
+{
+    margin: 0 0 0 300px;
+    position: absolute;
+    top: 470px;
+    width: 500px;
+}
+
+#privacy-interaction form
+{
+	margin: 0 0 0 0;	
+}
+
+#privacy-interaction p#privacy-interaction-cgu
+{
+	text-align: left;
+	font-size: 8px;
+}
+#privacy-interaction-logo-div
+{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+#privacy-interaction img.borderbuttonside
+{
+	border: 0;vertical-align: middle;padding: 0;margin: 0;
+}
+#privacy-interaction input.privacy-interaction-button
+{
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 13px; font-weight: bold;
+	letter-spacing: 0;
+	vertical-align: middle;
+	border-style: none;
+	margin:0;
+	padding:0 0.5em;padding-bottom: 2px;
+	height: 26px;width:auto;
+	overflow:visible;
+	cursor: pointer;cursor: hand;
+	text-transform: lowercase;	
+}
+#privacy-interaction #privacy-interaction-confirm
+{
+	background: url(../images/orange-button-middle.png) repeat-x;
+	color: white;
+}
+#privacy-interaction #privacy-interaction-cancel
+{
+	background: url(../images/standard-button-middle.png) repeat-x;
+	color: black;	 	
+}
+#privacy-interaction #privacy-interaction-profile h4
+{
+	text-decoration: none;
+}
+#privacy-interaction #privacy-interaction-profile h4,
+#privacy-interaction #privacy-interaction-profile a.toggle-link
+{
+	color: black;
+}
+#privacy-interaction #privacy-interaction-profile span.fold-icon
+{
+	text-decoration: none;
+}
+#privacy-interaction #shared-data
+{
+	border: 1px solid #E0E0E0;
+	background-color: #F9F9F9;
+}
+#privacy-interaction #privacy-interaction-profile-details
+{
+	width: 100%;
+}
+#privacy-interaction #privacy-interaction-profile-details td
+{
+	vertical-align: top;
+}
+#privacy-interaction #privacy-interaction-profile-attribute-checkbox
+{
+	width: 16px;	
+}
+#privacy-interaction #privacy-interaction-profile-attribute-checkbox input
+{
+	margin-left: 15px;
+}
+#privacy-interaction #privacy-interaction-profile-attribute-name
+{
+	width: 40%;
+}
+#privacy-interaction .privacy-interaction-contact-advanced-cgu
+{
+	font-weight: light;
+	font-size: 6px;
+}
+#privacy-interaction #privacy-interaction-profile-cgu
+{
+	font-size: 8px;
+}
+#privacy-interaction #attrs-without-desc #whatisit
+{
+	border: 1px solid #E0E0E0;
+	background-color: #F9F9F9;
+	margin: 0;
+	margin-top: 5px;
+	margin-left: 20px;
+	padding: 5px;
+}
+#privacy-interaction #attrs-without-desc input
+{
+	margin: 0; padding: 0;
+	margin-right: 5px;
+}
+#privacy-interaction #attrs-without-desc h4
+{
+	margin: 0; padding: 0;
+}
+#privacy-interaction #attrs-without-desc h4 a
+{
+	color: black;
+	text-decoration: underline;
+}
+#privacy-interaction #attrs-without-desc h4 a:hover
+{
+	color: #FF6600;
+}
+
+.grey-help-complete
+{
+	border: 3px solid #C0C0C0;
+	background-color: #E7E7E7;
+	margin: 0;
+	margin-top: 5px;
+	margin-left: 20px;
+	padding: 10px;
+}
+
+.grey-help-bottom
+{
+	background-color: #E7E7E7;
+	border-bottom: 3px solid #C0C0C0;
+	border-left: 3px solid #C0C0C0;
+	border-right: 3px solid #C0C0C0;
+	margin: 0;
+	margin-left: 20px;
+	padding: 10px;
+}
+
+.white-help-complete
+{
+	border: 3px solid #C0C0C0;
+	margin: 0;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	width:900px;
+}
+
+.orange-background
+{
+	margin: 0;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	width:900px;
+	background-color: #FF6600;
+}
+
+
+#orange-text
+{
+	color:#FF6600;
+}
+
+.black-text
+{
+	color:black;
+}
+
+#underline-black-text
+{
+	text-decoration:underline;
+	font-size:16px;
+}
+
+.underline-text
+{
+	text-decoration:underline;
+}
+
+#uncheck-error
+{
+	color:#FF6600;
+}
+
+/* CONSENT PRESENTATION.DO */
+.presentation-content
+{
+	margin-left: 20px;
+	width: 1000px;
+	height: auto !important;
+	height: 350px;
+	min-height: 350px;
+	position: relative;
+}
+
+.presentation-howitwork
+{
+	padding:15px 20px 0 20px; 
+	margin-top:10px;
+	margin-bottom:20px; 
+	background:transparent url(../images/bg_comment_ca_marche.gif) no-repeat 0 0 ; 
+	width:909px; 
+	height:275px;
+}
+.presentation-ourengagements
+{
+	padding:15px 20px 0 20px; 
+	margin-top:10px;
+	margin-bottom:20px; 
+	background:transparent url(../images/bg_respect_vie_privee.gif) no-repeat 0 0 ; 
+	width:909px; 
+	height:191px;
+}
+.presentation-howitwork li, .presentation-ourengagements li 
+{ 
+	list-style-image: url(../images/fleche1.png);
+	padding-left: 12px; 
+	font-size: 12px;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	margin-bottom: 5px;
+}
+.presentation-participate 
+{
+	padding: 5px 20px;
+	background:transparent url(../images/bg_inscription.gif) no-repeat 0 0 ; 
+	width:910px; 
+	height:95px;
+}
+.presentation-participate p
+{
+	font-size: 12px;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	color: #434343;
+}
+.presentation-participate ul
+{
+	margin-top: 0;
+	float: left; 
+	width: 745px;
+}
+.presentation-participate li
+{
+	list-style-image: url(../images/fleche2.png);
+	padding-left: 18px; 
+	font-size: 12px;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	margin: 3px;
+}
+
+.presentation-inscription
+{
+	text-align:center;	
+	padding: 10px;
+}
+
+.presentation-inscription .borderbuttonside
+{
+	border: 0;vertical-align: middle;padding: 0;margin: 0;
+}
+
+.presentation-inscription #privacy-interaction-cancel
+{
+	background: url(../images/standard-button-middle.png) repeat-x;
+	color: black;	 	
+}
+
+#presentation-inscription input.privacy-interaction-button
+{
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 13px; font-weight: bold;
+	letter-spacing: 0;
+	vertical-align: middle;
+	border-style: none;
+	margin:0;
+	padding:0 0.5em;padding-bottom: 2px;
+	height: 26px;width:auto;
+	overflow:visible;
+	cursor: pointer;cursor: hand;
+	text-transform: lowercase;	
+}
+
+#withoutLine-link
+{
+	text-decoration:none;
+}
+
+#withoutLineBlack-link
+{
+	text-decoration:none;
+	color:black;
+}
+
+#underLineBlack-link
+{
+	color:black;
+}
+
+/* CONSENT KNOWMORE.DO */
+.knowmore-content 
+{
+	width: 485px;
+	margin: 0 auto;
+}
+.knowmore-howitwork
+{
+	padding:10px 20px 0 20px; 
+	margin-top:10px;
+	margin-bottom:20px; 
+	background:transparent url(../images/bg_knowmore_howitwork.gif) no-repeat 0 0 ; 
+	width:485px; 
+	height:370px;
+}
+.knowmore-ourengagements
+{
+	padding:10px 20px 0 20px; 
+	margin-top:10px;
+	margin-bottom:20px; 
+	background:transparent url(../images/bg_knowmore_ourengagements.gif) no-repeat 0 0 ; 
+	width:485px; 
+	height:260px;
+}
+.knowmore-howitwork li, .knowmore-ourengagements li 
+{ 
+	background: transparent url(../images/fleche1.png) no-repeat 0 0 ;
+	padding-left: 12px; 
+	font-size: 12px;
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	margin-bottom: 5px;
+	width: 440px;
+}
+
+.knowMore-return input.privacy-interaction-button
+{
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 13px; font-weight: bold;
+	letter-spacing: 0;
+	vertical-align: middle;
+	border-style: none;
+	margin:0;
+	padding:0 0.5em;padding-bottom: 2px;
+	height: 26px;width:auto;
+	overflow:visible;
+	cursor: pointer;cursor: hand;
+	text-transform: lowercase;	
+}
+
+.knowMore-return #privacy-interaction-cancel
+{
+	background: url(../images/standard-button-middle.png) repeat-x;
+	color: black;	 	
+}
+
+.knowmore-return
+{
+	text-align:right;
+}
+
+.knowMore-return .borderbuttonside
+{
+	border: 0;vertical-align: middle;padding: 0;margin: 0;
+}
+
+#privacy-policies-content .invisible
+{
+	display:none;
+}
+
+.global-ad-profile .borderbuttonside
+{
+	border: 0;vertical-align: middle;padding: 0;margin: 0;
+}
+
+.global-ad-profile #privacy-interaction-cancel
+{
+	background: url(../images/standard-button-middle.png) repeat-x;
+	color: black;	 	
+}
+
+.global-ad-profile input.privacy-interaction-button
+{
+	font-family: arial, sans-serif, verdana, bitstream vera sans;
+	font-size: 13px; font-weight: bold;
+	letter-spacing: 0;
+	vertical-align: middle;
+	border-style: none;
+	margin:0;
+	padding:0 0.5em;padding-bottom: 2px;
+	height: 26px;width:auto;
+	overflow:visible;
+	cursor: pointer;cursor: hand;
+	text-transform: lowercase;	
+}
+
+ #privacy-policies-content .global-ad-profile
+{
+	 border:1px solid #D0D0D0;
+	 width:100%;
+	 min-height:50px;
+	 padding:5px;
+	 padding-bottom: 30px;
+	 height:auto;
+}
+
+#rollTextDiv
+{
+	margin-top:25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+}
+
+#white-text
+{
+	color:white;
+}
+
+.presentation-subtitle
+{
+	margin: 0;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	width:900px;
+	font-size:11pt;
+}
+
+#bold-text
+{
+	font-weight:bold;
+}
+
+.profilKindSight-button
+{
+	text-align:right !important;
+}
+
+.knowmore-content .orange-background
+{
+	margin: 0;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	width:100%;
+	background-color: #FF6600;
+}
+
+.knowmore-content .white-help-complete
+{
+	border: 3px solid #C0C0C0;
+	margin: 0;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	width:100%;
+}
+
+.panelShadowBottomLeft
+{
+	background: url(../images/shadowPanel_bottom_left.png) repeat scroll 0 0 transparent;
+	bottom: 0;
+	height: 8px;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 8px;
+}
+
+.panelShadowBottomCenter
+{
+	background: url(../images/shadowPanel_bottom_center.png) repeat-x scroll 0 0 transparent;
+	bottom: 0;
+	height: 8px;
+	left: 8px;
+	right:8px;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+.panelShadowBottomRight
+{
+	background: url(../images/shadowPanel_bottom_right.png) repeat scroll 0 0 transparent;
+	bottom: 0;
+	height: 8px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	width: 8px;
+}
+
+.panelShadowCenterRight
+{
+	background-image: url(../images/shadowPanel_center_right.gif);
+	background-repeat: repeat-y;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-position: 0 0;
+	
+	position: absolute;
+	right: 0;
+	top: 8px;
+	bottom: 8px;
+	width: 8px;
+	padding-bottom: 1px;
+}
+
+.panelShadowTopRight
+{
+	background: url(../images/shadowPanel_top_right.png) repeat scroll 0 0 transparent;
+	height: 8px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 8px;
+}
+
+.blocPanel
+{
+	margin: 25px 0 3px;
+	overflow: hidden;
+	padding-bottom: 8px;
+	position: relative;
+	width: 524px;
+}
+
+.headerPanel
+{
+	background: url(../images/title-panel-background.png) repeat scroll 0 0 transparent;
+	cursor: move;
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	position: relative;
+	width: 517px;
+}
+
+.innerPanel
+{
+
+	border: 1px solid #CCCCCC;
+	overflow: hidden;
+	width: 515px;
+}
+
+.contentPanel
+{
+	padding: 12px 10px 12px 10px;
+}
+
+.titlePanel
+{
+	padding-left: 10px;
+}
+
+#panel-selfcare-content img.borderbuttonside
+{
+	border: 0;vertical-align: middle;padding: 0;margin: 0;
+}
+
+
+.privacy-consent-section-top
+{
+	background: url(../images/bg-largest-top.png) no-repeat;
+	
+	line-height: 20px;
+    width: 100%;
+}
+
+.privacy-consent-section-middle
+{
+	background-color: transparent;
+	background-image: url(../images/bg-largest-middle.png) ;
+	background-repeat: repeat-y;
+	background-position: 0 0;
+	background-attachment: scroll;
+}
+
+.privacy-consent-section-bottom
+{
+	background: url(../images/bg-largest-bottom.png) no-repeat;
+}
+
+.grey-help-inverse
+{
+	border: 3px solid #c1c1c1;
+	background-color: #afafaf;
+	margin: 5px 0 0 0;
+	padding: 10px;
+}
+
+.grey-help-inverse-shifted
+{
+	border: 3px solid #c1c1c1;
+	background-color: #afafaf;
+	margin: 5px 0 0 0;
+	padding: 0 5px 0 5px;
+	margin-left:300px;
+}
+
+.without-border-help-complete
+{
+	margin: 0;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	width:900px;
+}
+
+.grey-font-black-border-panel
+{
+	border: 1px solid black;
+	background-color: #dedede;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	width:900px;
+}
+
+.grey-font-black-border-knowmore
+{
+	border: 1px solid black;
+	background-color: #dedede;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	width:485px;
+	padding:15px;
+}
+
+.orange-text-bold-title
+{
+	color:#FF6600;
+	font-weight : bold; 
+	font-size:16px;
+}
+
+.orange-text-bold
+{
+	color:#FF6600;
+	font-weight : bold;
+}
+
+.hidden-item
+{
+	display:none;
+}
+
+.bottom-relative
+{
+	bottom: 0px;
+}
+
+.privacy-picture
+{
+	float:left;
+	margin-right:50px;
+}
+
+.privacy-picture-section-content
+{
+	margin-bottom: 20px; 
+	width: 800px;
+	margin-left: 50px;
+	height:500px;
+	position:relative;
+
+}
+
+#privacy-main-section #privacy-openid-without-margin
+{
+	margin-bottom:0px;
+}
+
+.hideDiv
+{
+	display:none;
+}
+
+.showDiv
+{
+	display:inline;
+}
+
+.profile-picture
+{
+	border:1px solid #D0D0D0;
+	width: 30px;
+	height: 30px;
+	max-height:30px;
+	max-width:30px;
+}
+
+.defaultInputValue
+{
+	color:grey;
+	
+}
+
+.policies-profil-label
+{
+	vertical-align:top;
+}
+
+.policies-profil-title-list
+{
+	font-size: 11px;
+	font-weight: bold;
+}
+	

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	    <property name="locations">
+	        <value>classpath:testJdbc.properties</value>
+	    </property>
+	</bean>
+	
+	<bean id="dataSourceBean" destroy-method="close" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${jdbc.driverClassName}"/>
+		<property name="url" value="${jdbc.url}"/>
+		<property name="username" value="${jdbc.username}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+	
+	<bean id="userDaoBean" class="com.orange.paddock.cee.data.dao.impl.SubscribedUserDao">
+		<property name="dataSource" ref="dataSourceBean"/>
+	</bean>
+	<bean id="contactDaoBean" class="com.orange.paddock.cee.data.dao.impl.ContactDao">
+		<property name="dataSource" ref="dataSourceBean"/>
+	</bean>
+	<bean id="relationDaoBean" class="com.orange.paddock.cee.data.dao.impl.RelationDao">
+		<property name="dataSource" ref="dataSourceBean"/>
+	</bean>
+	
+</beans>

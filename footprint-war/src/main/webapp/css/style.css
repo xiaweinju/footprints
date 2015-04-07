@@ -1,0 +1,151 @@
+/* hide js only elements on startup */
+html.no-js .js {display:none}
+
+/* base css CONTAINER */
+body {width:882px; padding:50px 0 50px 50px}
+#container {position:relative}
+#main {padding-left:75px; min-height:500px}
+html.no-js .toggle-layer {display:none}
+
+.chxlabel {position:relative; top:-2px}
+
+/* base css HEADER */
+.header {height:60px}
+.header .user {text-align:right}
+.header .logo {position:absolute}
+.header a, .header a:active, .header a:visited, .header a:hover {font-weight:bold; color:#000}
+
+/* module logic (grouped content) */
+.module-large {position:relative; width:530px; padding:12px; margin:0 0 15px 2px}
+.module-medium {position:relative; width:210px; padding:12px; margin:0 0 15px 2px}
+.module-small {position:relative; width:210px; padding:12px; margin:0 0 15px 2px}
+.module-small.info {position:absolute; left:644px; line-height:15px}
+html.ie6 .module-large {top:-186px}
+html.ie6 .module-small.info {left:570px}
+
+/* box-filled (square gray background) */
+.box-filled {background-color:#EFEFEF; padding:12px}
+.box-filled-small {background-color:#EFEFEF; padding:6px}
+
+/* box border css */
+.box {position:relative}
+.border .tl, .border .t, .border .tr, .border .r, .border .br, .border .b, .border .bl, .border .l {position:absolute; display:block; z-index:1}
+.box .border .t  {background:url(../images/box/panel_t.png);  width:auto; height:6px;  top:-6px; right: 0px; bottom:auto; left: 0px}
+.box .border .tr {background:url(../images/box/panel_tr.png); width:6px;  height:6px;  top:-6px; right:-6px; bottom:auto; left:auto}
+.box .border .r  {background:url(../images/box/panel_r.png);  width:6px;  height:auto; top: 0px; right:-6px; bottom: 0px; left:auto}
+.box .border .br {background:url(../images/box/panel_br.png); width:6px;  height:6px;  top:auto; right:-6px; bottom:-6px; left:auto}
+.box .border .b  {background:url(../images/box/panel_b.png);  width:auto; height:6px;  top:auto; right: 0px; bottom:-6px; left: 0px}
+.box .border .bl {background:url(../images/box/panel_bl.png); width:6px;  height:6px;  top:auto; right:auto; bottom:-6px; left:-6px}
+.box .border .l  {background:url(../images/box/panel_l.png);  width:6px;  height:auto; top: 0px; right:auto; bottom: 0px; left:-6px}
+.box .border .tl {background:url(../images/box/panel_tl.png); width:6px;  height:6px;  top:-6px; right:auto; bottom:auto; left:-6px}
+
+/* headlines */
+h1 {font-size:37px; height:44px; font-weight:bold; margin-bottom:0px; color:#FF6600; font-weight:normal}
+h2 {font-size:22px; font-weight:bold; margin-bottom:7px}
+h2.sub-h1 {font-size:12px}
+h3 {font-size:22px; font-weight:normal; margin-bottom:7px; line-height:25px}
+h4 {font-size:15px; font-weight:bold; margin-bottom:3px; line-height:19px}
+h5 {font-size:11px; font-weight:bold; margin-bottom:3px}
+
+/* divider */
+.divider {border-bottom:3px solid #CCCCCC; padding-top:20px; margin-bottom:20px; line-height:1px}
+.divider.small {border-width:2px; padding-top:14px; margin-bottom:14px}
+.divider.tiny {border-width:1px; padding-top:10px; margin-bottom:7px}
+
+/* floating images */
+img.float-left {float:left; margin:0 8px 8px 0}
+
+/* table */
+.table {}
+.table td {height:24px; padding:1px 5px;}
+.table .right {text-align:right}
+.table td.c1 {width:155px; vertical-align:top; padding-top:7px}
+.table td.c2 {width:220px; line-height:19px; padding-top:6px; vertical-align:bottom;}
+.table td.c2.select{color:red}
+.table td.c2 .text {color:#555;}
+.table td.controls {vertical-align:bottom; padding-bottom:3px;}
+
+/* icons */
+.info-icon {position:relative; display:inline-block; width:17px; height:14px; background:url(../images/info_small.png) no-repeat}
+html.ie6 .info-icon, html.ie7 .info-icon, html.ie8 .info-icon {width:20px}
+
+/* tooltip */
+.info-tooltip {display:none; width:339px; padding:10px; padding-top:3px; position:absolute; z-index:201; line-height:13px; background:url(../images/popup_center.png)}
+.info-tooltip .border .t {height:5px;  width:359px; top:-5px; left:0px; z-index:101; background:url(../images/popup_t.png) no-repeat}
+.info-tooltip .border .b {height:25px; width:359px; bottom:-20px; left:0px; z-index:101; background:url(../images/popup_b.png) no-repeat}
+
+
+/* js-checkbox */
+.js.js-checkbox {background:url(../images/checkbox_unchecked.png); display:inline-block; width:14px; height:14px; margin-right:3px;}
+.js.js-checkbox.checked {background:url(../images/checkbox_checked.png)}
+.js.js-checkbox + label {position:relative; top:-2px}
+html.ie8 .js.js-checkbox + label {position:relative; top:-3px}
+html.ie6 .js-checkbox-label, html.ie7 .js-checkbox-label {position:relative; top:-3px}
+
+/* js-select */
+.js.js-select .select {position:relative; z-index:105; display:inline-block; line-height:15px; height:20px; padding:0 25px 0 2px; background:url(../images/btn_center.png); margin-left:3px; cursor:pointer}
+.js.js-select .select .text {position:relative; z-index:105; top:2px}
+.js.js-select .select .icon {position:absolute; z-index:105; display:block; height:20px; width:23px; top:0px; right:0px; background:url(../images/btn_dropdown_inactive.png)}
+.js.js-select .select.active .icon {background:url(../images/btn_dropdown_active.png)}
+.js.js-select .select .border .l {height:20px; width:4px; top:0px; left:-4px; background:url(../images/btn_l.png) no-repeat}
+.js.js-select .select .border .r {height:20px; width:4px; top:0px; right:-4px; background:url(../images/btn_r.png) no-repeat}
+.js.js-select.list {position:absolute; z-index:105; border:1px solid #ccc; width:110px; max-height:250px; overflow:auto}
+.js.js-select.list ul {padding:0; margin:0}
+.js.js-select.list li {list-style:none; padding:0; margin:0}
+.js.js-select.list li a {display:block; padding:2px 3px; overflow:hidden; text-decoration:none; background-color:#ffffff}
+.js.js-select.list li a, .js.js-select.list li a:active, .js.js-select.list li a:visited, .js.js-select.list li a:hover {color:#000}
+.js.js-select.list li a:hover {background-color:#F8ECDF}
+
+/* js-edit */
+.js-editable .controls .cancel {margin-right:5px}
+
+/* textinput */
+.textinput {border:1px solid #D4D4D4; background-color:#FEFEFE; color:#333}
+.textinput.inactive {background-color:#FAFAFA; color:#999}
+
+/* indentations */
+.indent1 {padding-left:30px}
+html.ie6 .indent1 .info-icon {margin:5px 0 10px 0}
+html.no-js .indent1 {padding-left:0px}
+
+/* arrows */
+.arrow-br, .arrow-r, .arrow-bl, .arrow-square-r {padding-left:11px; background:no-repeat 0px 4px}
+.arrow-br {background-image:url(../images/smallarrow_right.png); background-position:0px 3px}
+.arrow-r {background-image:url(../images/arrow_greybox.png)}
+.arrow-bl {background-image:url(../images/smallarrow_light.png)}
+.arrow-square-r {background-image:url(../images/arrow_square.png); padding:2px 0 0 18px; height:18px}
+
+/* buttons */
+.button-accept, .button-cancel, .button-signin, .button-dynamic {display:inline-block; width:62px; height:26px; background-repeat:no-repeat}
+.button-accept {background-image:url(../images/accept_button.png)}
+.button-cancel {background-image:url(../images/cancel_button.png)}
+.button-signin {background-image:url(../images/signin_button.png)}
+.button-dynamic {background:url(../images/greybutton_center.png) repeat-x; padding:2px 8px 0 8px; position:relative; height:18px}
+a.button-dynamic, a.button-dynamic:active, a.button-dynamic:visited, a.button-dynamic:hover {text-decoration:none; font-weight:bold; color:#000; width:auto}
+.button-dynamic .border .l {height:20px; width:5px; top:0px; left:0px; background:url(../images/greybutton_left.png) no-repeat}
+.button-dynamic .border .r {height:20px; width:5px; top:0px; right:0px; background:url(../images/greybutton_right.png) no-repeat}
+
+/* base css FOOTER */
+.footer {padding-top:40px}
+.footer ul {border-top:5px solid #CCCCCC}
+.footer ul li {list-style:none; display:inline}
+.footer ul a {display:inline-block; padding:5px 7px; background:url(../images/square.png) no-repeat 0px 11px}
+.footer a, .footer a:active, .footer a:visited, .footer a:hover {color:#000}
+
+/* base css .p_01_partner */
+.p_01_partner .left {float:left; padding-left:10px}
+.p_01_partner .right {margin-left:270px}
+.p_01_partner .right .button-dynamic {position:relative; top:-4px; left:+4px; float:right}
+.p_01_partner .right .box-filled-small {clear:left}
+.p_01_partner .right .more {line-height:20px}
+
+/* base css .c_02_profile_login */
+.c_02_profile_login .login, .c_02_profile_login .info {height:170px}
+.c_02_profile_login .login strong {display:inline-block; padding-bottom:4px}
+.c_02_profile_login .login input.text {margin-bottom:17px; width:225px}
+html.ie6 .c_02_profile_login .login {margin-top:-22px}
+
+/* base css .c_01_consent */
+.c_01_consent .table .c1 {padding:8px 10px 0 0;}
+.c_01_consent .table td.c2 {width:190px}
+html.no-js .c_01_consent .indent1 .js-checkbox {position:relative; top:-5px}
