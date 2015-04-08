@@ -73,11 +73,11 @@
 		 </dependency>
 		 <dependency>
 			<groupId>com.weixia.footprint</groupId>
-			<artifactId>footprint-consumer-richProfile</artifactId>
+			<artifactId>footprint-consumer-weichat</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.weixia.footprint</groupId>
-			<artifactId>footprint-consumer-upe</artifactId>
+			<artifactId>footprint-consumer-baidu</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.weixia.footprint</groupId>

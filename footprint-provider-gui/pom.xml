@@ -57,7 +57,7 @@
 
 		<dependency>
 			<groupId>com.weixia.footprint</groupId>
-			<artifactId>footprint-consumer-upe</artifactId>
+			<artifactId>footprint-consumer-baidu</artifactId>
 		</dependency>
 		
 		<dependency>

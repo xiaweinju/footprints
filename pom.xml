@@ -20,8 +20,8 @@
    	    <module>footprint-provider-gui</module>
    	    <module>footprint-business</module>
    	    <module>footprint-war</module>
-   	    <module>footprint-consumer-upe</module>
-   	    <module>footprint-consumer-richProfile</module>
+   	    <module>footprint-consumer-baidu</module>
+   	    <module>footprint-consumer-weichat</module>
    	    <module>footprint-data</module>
    	    <module>footprint-commons</module>
   </modules>
@@ -180,13 +180,13 @@
 			
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>footprint-consumer-upe</artifactId>
+				<artifactId>footprint-consumer-baidu</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>footprint-consumer-richProfile</artifactId>
+				<artifactId>footprint-consumer-weichat</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			

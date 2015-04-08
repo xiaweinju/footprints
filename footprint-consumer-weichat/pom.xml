@@ -8,7 +8,7 @@
 	</parent>
 
 	<artifactId>footprint-consumer-weichat</artifactId>
-	<name>Footprint consumer RichProfile Maven Module</name>
+	<name>Footprint consumer Weichat Maven Module</name>
 
 	<properties>
 

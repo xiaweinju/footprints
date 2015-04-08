@@ -9,7 +9,7 @@
 
 
 	<artifactId>footprint-consumer-baidu</artifactId>
-	<name>Footprint UPE consumer Maven Module</name>
+	<name>Footprint Baidu consumer Maven Module</name>
 
 	<properties>
 		<maven.compiler.source>${jdk.version}</maven.compiler.source>
